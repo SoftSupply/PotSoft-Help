@@ -17,31 +17,36 @@
         {
           "Title": "Configuración",
           "Link": "GanSoftPro?id=Inicio&key=Configuracion"
-        }
-      ]
-    },
-    {
-      "Title": "Suspendisse",
-      "Items": [
-        {
-          "Title": "Curabitur",
-          "Link": ""
         },
         {
-          "Title": "Aliquam",
-          "Link": ""
+          "Title": "Glosario de términos",
+          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
         }
       ]
-    },
-    {
-      "Title": "<i class='fa fa-google' style='margin-right: 8px;'></i>Google",
-      "Link": "http://www.google.com/",
-      "Target": "_blank"
-    },
-    {
-      "Title": "<i class='fa fa-arrow-left' style='margin-right: 8px;'></i>Volver",
-      "Link": "/",
-      "Class": "alert alert-warning"
     }
+    //,
+    //{
+    //  "Title": "Suspendisse",
+    //  "Items": [
+    //    {
+    //      "Title": "Curabitur",
+    //      "Link": ""
+    //    },
+    //    {
+    //      "Title": "Aliquam",
+    //      "Link": ""
+    //    }
+    //  ]
+    //},
+    //{
+    //  "Title": "<i class='fa fa-google' style='margin-right: 8px;'></i>Google",
+    //  "Link": "http://www.google.com/",
+    //  "Target": "_blank"
+    //},
+    //{
+    //  "Title": "<i class='fa fa-arrow-left' style='margin-right: 8px;'></i>Volver",
+    //  "Link": "/",
+    //  "Class": "alert alert-warning"
+    //}
   ]
 }
