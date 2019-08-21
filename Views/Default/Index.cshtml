@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "PotSoft";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Manual de PotSoft {ViewBag.Manifest.Title}";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p>
+            Alguna pagina
+        </p>
+    </div>
+</div>

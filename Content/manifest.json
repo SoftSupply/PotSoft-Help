@@ -1,0 +1,47 @@
+﻿{
+  "Name": "PotSoft",
+  "Title": "PotSoft",
+  "Description": "Software para el control de potreros y cultivos",
+  "Index": [
+    {
+      "Title": "<b>Inicio</b>",
+      "Items": [
+        {
+          "Title": "Requerimientos",
+          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+        },
+        {
+          "Title": "Instalación",
+          "Link": "PotSoft?id=Inicio&key=Instalacion"
+        },
+        {
+          "Title": "Configuración",
+          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+        }
+      ]
+    },
+    {
+      "Title": "Suspendisse",
+      "Items": [
+        {
+          "Title": "Curabitur",
+          "Link": ""
+        },
+        {
+          "Title": "Aliquam",
+          "Link": ""
+        }
+      ]
+    },
+    {
+      "Title": "<i class='fa fa-google' style='margin-right: 8px;'></i>Google",
+      "Link": "http://www.google.com/",
+      "Target": "_blank"
+    },
+    {
+      "Title": "<i class='fa fa-arrow-left' style='margin-right: 8px;'></i>Volver",
+      "Link": "/",
+      "Class": "alert alert-warning"
+    }
+  ]
+}
