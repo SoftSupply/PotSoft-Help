@@ -23,30 +23,223 @@
           "Link": "PotSoft?id=Inicio&key=Glosario"
         }
       ]
+    },
+    {
+      "Title": "<b>Archivo</b>",
+      "Items": [
+        {
+          "Title": "Módulos de producción",
+          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+        },
+        {
+          "Title": "Unidades de producción",
+          "Link": "PotSoft?id=Inicio&key=Instalacion"
+        },
+        {
+          "Title": "Lotes de producción",
+          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+        },
+        {
+          "Title": "Actividades / Labores",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Especies de animales",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Categorías de animales",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Grupos de animales",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Cultivos",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Diagnóstico para plantas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Tratamientos para plantas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Pruebas para plantas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Planos no asociados",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Pluviómetros",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Productos",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Unidades de medición",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Variables generales",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Salir",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Operaciones</b>",
+      "Items": [
+        {
+          "Title": "Notificar actividades",
+          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+        },
+        {
+          "Title": "Notificar producto",
+          "Link": "PotSoft?id=Inicio&key=Instalacion"
+        },
+        {
+          "Title": "Notificar movimiento",
+          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+        },
+        {
+          "Title": "Administración en multipunto",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Notificar diagnótico en plantas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Notificar tratamientos en plantas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Notificar pruebas en plantas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Pluviosidad",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Programación de actividades",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Consultar inventarios",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Rportes</b>",
+      "Items": [
+        {
+          "Title": "Actividades/Labores programadas",
+          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+        },
+        {
+          "Title": "Actividades/Labores realizadas",
+          "Link": "PotSoft?id=Inicio&key=Instalacion"
+        },
+        {
+          "Title": "Producción",
+          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+        },
+        {
+          "Title": "Producción por unidad de superficie",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Listado de diagnóstico, tratamientos y pruebas en plantas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Listado de plantas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Listado de plantas con diagnóstico, tratamientos y/o pruebas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Movimientos de animales",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Estadísticas",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Egresos",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Herramientas</b>",
+      "Items": [
+        {
+          "Title": "Cambiar contraseña",
+          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+        },
+        {
+          "Title": "Cambiar usuario",
+          "Link": "PotSoft?id=Inicio&key=Instalacion"
+        },
+        {
+          "Title": "Administración de usuarios",
+          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+        },
+        {
+          "Title": "Respaldar datos",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Restaurar datos",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Reiniciar datos del sistema",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Calculadora",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Calendario",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        },
+        {
+          "Title": "Cambiar fondo del sistema",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Ayuda</b>",
+      "Items": [
+        {
+          "Title": "Contenido",
+          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+        },
+        {
+          "Title": "Acerca de...",
+          "Link": "PotSoft?id=Inicio&key=Instalacion"
+        }
+      ]
     }
-    //,
-    //{
-    //  "Title": "Suspendisse",
-    //  "Items": [
-    //    {
-    //      "Title": "Curabitur",
-    //      "Link": ""
-    //    },
-    //    {
-    //      "Title": "Aliquam",
-    //      "Link": ""
-    //    }
-    //  ]
-    //},
-    //{
-    //  "Title": "<i class='fa fa-google' style='margin-right: 8px;'></i>Google",
-    //  "Link": "http://www.google.com/",
-    //  "Target": "_blank"
-    //},
-    //{
-    //  "Title": "<i class='fa fa-arrow-left' style='margin-right: 8px;'></i>Volver",
-    //  "Link": "/",
-    //  "Class": "alert alert-warning"
-    //}
   ]
 }
