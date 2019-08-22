@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Modulos de producción";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Este menú está compuesto por diferentes opciones como son:
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Agregar">Agregar</a>
+            </li>
+            <li>
+                <a href="#Agregar">Modificar</a>
+            </li>
+            <li>
+                <a href="#Agregar">Eliminar</a>
+            </li>
+            <li>
+                <a href="#Fotos">Fotos</a>
+            </li>
+            <li>
+                <a href="#Variables">Variables</a>
+            </li>
+            <li>
+                <a href="#HistoricoActividades">Histórico de actividades/labores</a>
+            </li>
+            <li>
+                <a href="#HistoricoProduccion">Histórico de producción</a>
+            </li>
+            <li>
+                <a href="#HistoricoMovimientos">Histórico de movimientos</a>
+            </li>
+            <li>
+                <a href="#HistoricoDiagnostico">Histórico de diagnóstico en plantas</a>
+            </li>
+            <li>
+                <a href="#HistoricoTratamientos">Histórico de tratamientos en plantas</a>
+            </li>
+            <li>
+                <a href="#HistoricoPruebas">Histórico de pruebas en plantas</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Agregar">Agregar y modificar módulos de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En PotSoft se define un módulo de producción como el elemento principal del control de la producción, la coordinación y planificación
+                    de las actividades y la cuantificación y control de los inventarios y movimientos de los animales en un sistema de producción. El módulo
+                    de producción puede o no tener animales como es el caso de los cultivos de lechoza, parchita, café y palma aceitera entre otros.
+                </p>
+                <p>
+                    Un módulo de producción debe ser subdividido en Unidades de Producción para establecer un orden jerárquico en el sistema de producción.<br>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+            <div class="col-md-8">
+                <p>
+                    Los datos requeridos para la definición de un módulo de producción son:
+                    <ul>
+                        <li>
+                            <b>Código: </b> Debe especificarse un código único para cada módulo de producción, de 1 carácter de longitud como mínimo y de 6 caracteres de longitud como máximo. Los caracteres pueden ser alfanuméricos y siempre se tomarán en mayúsculas.
+                        </li>
+                        <li>
+                            <b>Nombre del módulo: </b> Debe especificarse un nombre único para cada módulo de producción, de 1 carácter de longitud como mínimo y de 40 caracteres de longitud como máximo. Los caracteres pueden ser alfanuméricos.
+                        </li>
+                        <li>
+                            <b>Unidad para cálculos de superficie: </b> Es necesario especificar una unidad de medición de superficie para cada módulo de producción. En base a esta unidad de medición se llevarán a cabo los cálculos que involucren unidades de superficie. 
+                            Si la unidad de superficie deseada no se encuentra en la lista desplegable, puede registrarla al sistema a través de la ventana de unidades de medición. Puede invocar esta ventana ya sea desde el Menú Principal (para ello habrá de cerrar la 
+                            ventana de datos de módulo de producción primero), pulsando el botón que se encuentra ubicado al lado derecho de la lista desplegable o pulsando la tecla <b>F2</b>.
+</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Utilice esta opción en caso de que sea un nuevo usuario del programa y haya adquirido la licencia,
+                    su proveedor le hará entrega de un archivo personalizado en un CD o vía correo electrónico.
+                    El sistema lo guiará para la recuperación del archivo. Solo debe tomar en cuenta la ruta donde se encuentra almacenado el archivo.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Datosdemostrativos">Datos demostrativos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Seleccionando esta opción tendrá acceso al programa GanSoft con datos que le permitirán evaluar el comportamiento del sistema en el manejo
+                    de gráficas, estadísticas, reportes ya que contiene registros previos que facilitarán la visualización
+                    de resultados a través del sistema.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Conectarseaunabasededatosexistente">Conectarse a una base de datos existente</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    A través de esta opción el usuario tendrá la posibilidad de establecer conexión desde diferentes fuentes. Cada una de las cuales se indican a continuación:
+                </p>
+                <div class="col-md-12">
+                    <ul>
+                        <li>Servidor Web: Para aquellos casos en los que el usuario tenga la base de datos hospedada en un servidor web, por medio de esta opción es posible establecer conexión. Para ello, el usuario debe hacer clic en opciones avanzadas e indicar los parámetros de seguridad para la conexión.</li>
+                        <li>Servidor en Red: Si dispone de una conexión en red, puede establecer conexión con la base de datos instalada en el servidor, indicando para ello los parámetros de conexión requeridos. Haga clic en opciones avanzadas y especifique el nombre del servidor con el que desea establecer conexión y haga clic en conectar. Al establecer la conexión se mostrarán las bases de datos disponibles. Seleccione la que desea utilizar.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="recuperardatosdesdeunrespaldo">Recuperar datos desde un respaldo</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Por medio de esta opción es posible recuperar un respaldo de los datos previamente realizado en la versión 7.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
