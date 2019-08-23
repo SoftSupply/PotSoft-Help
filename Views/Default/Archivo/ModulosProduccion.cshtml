@@ -80,62 +80,253 @@
                             <b>Nombre del módulo: </b> Debe especificarse un nombre único para cada módulo de producción, de 1 carácter de longitud como mínimo y de 40 caracteres de longitud como máximo. Los caracteres pueden ser alfanuméricos.
                         </li>
                         <li>
-                            <b>Unidad para cálculos de superficie: </b> Es necesario especificar una unidad de medición de superficie para cada módulo de producción. En base a esta unidad de medición se llevarán a cabo los cálculos que involucren unidades de superficie. 
-                            Si la unidad de superficie deseada no se encuentra en la lista desplegable, puede registrarla al sistema a través de la ventana de unidades de medición. Puede invocar esta ventana ya sea desde el Menú Principal (para ello habrá de cerrar la 
+                            <b>Unidad para cálculos de superficie: </b> Es necesario especificar una unidad de medición de superficie para cada módulo de producción. En base a esta unidad de medición se llevarán a cabo los cálculos que involucren unidades de superficie.
+                            Si la unidad de superficie deseada no se encuentra en la lista desplegable, puede registrarla al sistema a través de la ventana de unidades de medición. Puede invocar esta ventana ya sea desde el Menú Principal (para ello habrá de cerrar la
                             ventana de datos de módulo de producción primero), pulsando el botón que se encuentra ubicado al lado derecho de la lista desplegable o pulsando la tecla <b>F2</b>.
-</li>
+                        </li>
+                        <li>
+                            <b>Nivel de reporte de producción: </b> Permite establecer a que nivel o niveles de la estructura organizacional se llevará a acabo la producción y el reporte de la misma. Al respecto existen las siguientes consideraciones basadas en la naturaleza
+                            de los productos asociados al módulo, es decir, los productos que maneja el módulo en cuestión, a saber:
+                            <ul>
+                                <li>
+                                    Si en el módulo intervienen animales, la producción sólo podrá reportarse a nivel de Grupo de Animales, y a la vez consultar los grupos de animales que esten registrados en el sistema.
+                                </li>
+                                <li>
+                                    En cualquier otro caso, puede establecerse que la producción se llevará a cabo a nivel de Módulo, Unidad, Lote o cualquier nivel indistintamente.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Tiempo de Digestibilidad: </b> En PotSoft se define el tiempo de digestibilidad como el número de horas en que el alimento consumido por los animales ubicados en dicho módulo se refleje en la producción de leche.
+                        </li>
                     </ul>
+                    Para agregar, modificar o eliminar fotos al módulo de producción, presione el botón <b>Fotos</b> que se muestra en la ventana.
                 </p>
             </div>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <div class="row">
             <div class="col-md-8">
                 <p>
-                    Utilice esta opción en caso de que sea un nuevo usuario del programa y haya adquirido la licencia,
-                    su proveedor le hará entrega de un archivo personalizado en un CD o vía correo electrónico.
-                    El sistema lo guiará para la recuperación del archivo. Solo debe tomar en cuenta la ruta donde se encuentra almacenado el archivo.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <h3 id="Datosdemostrativos">Datos demostrativos</h3>
-        <div class="row">
-            <div class="col-md-8">
-                <p>
-                    Seleccionando esta opción tendrá acceso al programa GanSoft con datos que le permitirán evaluar el comportamiento del sistema en el manejo
-                    de gráficas, estadísticas, reportes ya que contiene registros previos que facilitarán la visualización
-                    de resultados a través del sistema.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <h3 id="Conectarseaunabasededatosexistente">Conectarse a una base de datos existente</h3>
-        <div class="row">
-            <div class="col-md-8">
-                <p>
-                    A través de esta opción el usuario tendrá la posibilidad de establecer conexión desde diferentes fuentes. Cada una de las cuales se indican a continuación:
-                </p>
-                <div class="col-md-12">
+                    Una vez que se han establecido las propiedades básicas del módulo de producción, puede proceder a guardarlo, o bien puede configurar datos adicionales en cada uno de los tabs ubicados en la parte inferior de la ventana:
+
+                    <b>Categorías de Animales: </b> En este tab puede asociar al módulo las Categorías de Animales que este módulo empleará; en la lista de la izquierda se muestran las categorías de animales registradas en el sistema,
+                    mientras que en la lista de la derecha se muestran las categorías de animales que han sido asociadas al módulo de producción. Para Asociar Categorías de Animales al Módulo de Producción, simplemente marque la casilla
+                    de verificación ubicada al lado izquierdo de cada categoría y pulse el botón <b>Agregar</b>,
+                    o bien puede hacerlo individualmente haciendo doble clic sobre cada una de ellas. Si no encuentra la categoría deseada en la lista,
+                    puede invocar la ventana de categorías del sistema pulsando el botón correspondiente o pulsando la tecla <b>F3</b>.
+                    <br>
+                    Debajo de la lista hay 3 botones:
                     <ul>
-                        <li>Servidor Web: Para aquellos casos en los que el usuario tenga la base de datos hospedada en un servidor web, por medio de esta opción es posible establecer conexión. Para ello, el usuario debe hacer clic en opciones avanzadas e indicar los parámetros de seguridad para la conexión.</li>
-                        <li>Servidor en Red: Si dispone de una conexión en red, puede establecer conexión con la base de datos instalada en el servidor, indicando para ello los parámetros de conexión requeridos. Haga clic en opciones avanzadas y especifique el nombre del servidor con el que desea establecer conexión y haga clic en conectar. Al establecer la conexión se mostrarán las bases de datos disponibles. Seleccione la que desea utilizar.</li>
+                        <li>
+                            <b>Modificar: </b> Le permite modificar las propiedades de la categoría de animal seleccionada. Para seleccionar una categoría de animal no es necesario marcar su casilla de verificación.
+                        </li>
+                        <li>
+                            <b>Eliminar: </b> Elimina las categorías asociadas al módulo de producción cuya casilla de verificación esté marcada.
+                        </li>
+                        <li>
+                            <b>Eliminar todas: </b> Elimina todas las categorías asociadas al módulo de producción aunque sus casillas de verificación no estén marcadas.
+                        </li>
                     </ul>
-                </div>
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Al agregar categorías de animales al módulo, automáticamente la notificación de producción se restringirá a nivel de Grupo de Animales. Si en el módulo no se han definido grupos de animales no podrá reportarse producción.
+
+                    <b>Productos: </b> En este tab puede Asociar Productos al Módulo de Producción, es decir, aquellos productos que serán producidos en el módulo. La metodología de trabajo de este tab es análoga a la
+                    metodología de trabajo del tab de categorías de animales. Para agregar leche, primero debe agregar al módulo una categoría de animal productora de leche; asimismo, para agregar algún producto que modifique o
+                    afecte el inventario de animales de cualquier categoría, debe primero agregar las categorías de animales apropiadas.<br>
+                    <b>Actividades: </b> En este tab puede Asociar Actividades al Módulo de Producción que serán llevadas a cabo en el módulo de producción. La metodología de trabajo es análoga ala metodología del Tab de categorías de animales,
+                    exceptuando que las actividades de sistema no se muestran en una lista sino en un árbol jerárquico.<br>
+                    <b>Variables: </b> Si ha definido variables personalizadas para los módulos de producción podrá Asignar Valores a Variables de Módulo, el valor correspondiente a cada una de ellas es simplemente seleccionar la celda correspondiente
+                    al valor de la variable y comenzar a escribir su valor. Si no hay variables definidas o necesita definir una variable en especial, pulse el botón Variables o pulse la tecla <b>F3</b>, para agregar variables.<br>
+                    <b>Pluviómetros: </b> Puede asociar cualquier número de pluviómetros definidos por el sistema al Módulo de Producción con simplemente marcar su casilla de verificación. Si no ha pluviómetros registrados puede invocar la ventana de pluviómetros pulsando el botón correspondiente o pulsando la tecla <b>F3</b>.<br>
+                    <b>Terminología: </b> Aquí puede definir terminología personalizada para referirse a ese módulo de producción sus unidades de producción y sus lotes de producción.<br>
+                    <b>Inventario: </b> Se muestra el listado de los animales que se encuentran en todos los lotes pertenecientes a este módulo.<br>
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Si no se ha guardado el módulo de producción para el momento en que se vaya a configurar alguna de las opciones de los tabs correspondientes a <b>Categorías de animales</b>, <b>Productos</b>, <b>Actividades</b>, <b>Variables</b>, <b>Pluviómetros</b> o <b>Terminología</b>, el sistema le preguntará si desea salvar el módulo,
+                    si responde Si entonces se salvará el módulo y podrá llevar a cabo la configuración, si responde No, entonces no se guardará el Módulo ni se llevará a cabo la configuración de las opciones adicionales, pero la ventana se mantendrá abierta.
+                </p>
             </div>
         </div>
     </div>
     <div class="col-md-12">
-        <h3 id="recuperardatosdesdeunrespaldo">Recuperar datos desde un respaldo</h3>
+        <h3 id="Fotos">Fotografías de módulos de Producción</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    Por medio de esta opción es posible recuperar un respaldo de los datos previamente realizado en la versión 7.
+                    En esta ventana podrá agregar y modificar las fotografías del módulo de producción, así como también borrarlas.<br>
+                    Para asociar una fotografía a un módulo de producción, debe indicar un código (único para cada fotografía del módulo) alfanumérico de 1 carácter de longitud como mínimo y 4 caracteres de longitud como máximo, una fecha, la ruta del archivo de imagen y, opcionalmente, un comentario.<br>
+                    Puede asociar al módulo tantas fotos como quiera.
                 </p>
             </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Variables"> Variables de módulos de producción </h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Esta ventana le muestra las variables personalizadas de Módulos de Producción que se encuentran registradas en el sistema así como el tipo de las mismas. Los datos mostrados en esta ventana pueden ordenarse según sus necesidades simplemente con hacer clic sobre el encabezado de la columna por la cual desea ordenarlos; al hacer clic la primera vez sobre la columna, los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado de columna una segunda vez, los datos se ordenarán descendentemente.
+                    <br>
+                    Desde esta ventana puede <b>Agregar</b>, <b>Modificar</b> y <b>Eliminar</b> variables personalizadas de ámbito general mediante los botones de la ventana.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoActividades">Histórico de actividades/labores</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todas las actividades realizadas en un módulo, unidad o lote de producción, ordenadas por fecha de manera descendente, es decir, mostrando primero las actividades realizadas más recientemente.En esta ventana se muestran todas las actividades realizadas en un módulo, unidad o lote de producción, ordenadas por fecha de manera descendente, es decir, mostrando primero las actividades realizadas más recientemente.
+                    <br><br>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de actividades por actividad y rangos de fechas.
+                </p>
+                <p>
+                    En la parte inferior de la ventana hay 3 botones que le permiten:
+                    <ul>
+                        <li>
+                            <b>Agregar: </b> podrá agregar actividades al histórico; esto tiene el mismo efecto de la notificación de actividades realizadas.
+                        </li>
+                        <li>
+                            <b>Modificar: </b> permite modificar los datos de un registro histórico de actividad siempre y cuando la realización de dicha actividad no haya acarreado la modificación del inventario de animales.
+                        </li>
+                        <li>
+                            <b>Eliminar: </b> permite eliminar un registro histórico de actividad siempre y cuando la realización de dicha actividad no haya acarreado la modificación del inventario de animales.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoProduccion">Histórico de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todas las actividades realizadas en un módulo, unidad o lote de producción, ordenadas por fecha de manera descendente, es decir, mostrando primero las actividades realizadas más recientemente.En esta ventana se muestran todas las actividades realizadas en un módulo, unidad o lote de producción, ordenadas por fecha de manera descendente, es decir, mostrando primero las actividades realizadas más recientemente.
+                    <br><br>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de actividades por actividad y rangos de fechas.
+                </p>
+                <p>
+                    En la parte inferior de la ventana hay 3 botones que le permiten:
+                    <ul>
+                        <li>
+                            <b>Agregar: </b> podrá agregar producciones al histórico; esto tiene el mismo efecto de la notificación de producción.
+                        </li>
+                        <li>
+                            <b>Modificar: </b> permite modificar los datos de un registro histórico de producción.
+                        </li>
+                        <li>
+                            <b>Eliminar: </b> permite eliminar un registro histórico de producción.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoMovimientos">Histórico de movimientos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestra un sumario de todos los movimientos de animales realizados en un módulo, unidad o lote de producción, ordenados por fecha de manera descendente, es decir, mostrando primero los movimientos realizados más recientemente.
+                    <br><br>
+                    Por defecto, sólo se muestran los movimientos realizados en el mes en curso. Adicionalmente, puede filtrar el listado histórico de movimientos por tipo de movimiento y rangos de fechas. Al seleccionar un registro histórico de movimiento de la lista, se muestran los detalles del mismo en la lista inferior.
+                </p>
+                <p>
+                    En la parte inferior de la ventana hay 3 botones que le permiten:
+                    <ul>
+                        <li>
+                            <b>Agregar: </b> podrá agregar movimientos al histórico; esto tiene el mismo efecto de la notificación de movimientos.
+                        </li>
+                        <li>
+                            <b>Modificar: </b> permite modificar los datos de un registro histórico de movimiento siempre y cuando la realización de dicho movimiento no haya acarreado la modificación del inventario de animales de otro lote.
+                        </li>
+                        <li>
+                            <b>Eliminar: </b> permite eliminar un registro histórico de movimiento.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoDiagnostico">Histórico de diagnóstico para plantas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todas los diagnósticos realizados a las plantas que están registradas en el módulo de producción, unidad o lote de producción ordenadas según el tipo de lote, cultivo, hilera, posición y diagnóstico, incluye también un comentario donde indique el tipo de afección que presenta la planta.
+                    <br><br>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de diagnósticos por diagnósticos y rangos de fechas.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                        <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                            <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                        </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoTratamientos">Histórico de diagnóstico para plantas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todas los tratamientos que le serán realizados a las plantas que están registradas en el módulo de producción, unidad o lote de producción ordenadas según el tipo de lote, cultivo, hilera, posición y tratamientos, incluye también un comentario donde indique alguna anomalía que presenta la planta.
+                    <br><br>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de tratamientos por tratamientos y rangos de fechas.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                        <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                            <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                        </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoPruebas">Histórico de pruebas para plantas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todas las pruebas que le serán aplicadas a las plantas que están registradas en el módulo de producción, unidad o lote de producción , ordenadas según el tipo de lote, cultivo, hilera, posición y tratamientos, incluye también un comentario donde indique alguna anomalía que presenta la planta.
+                    <br><br>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de pruebas por pruebas y rangos de fechas.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                        <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                            <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                        </a>
+                </div>*@
         </div>
     </div>
 </article>

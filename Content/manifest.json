@@ -29,11 +29,11 @@
       "Items": [
         {
           "Title": "Módulos de producción",
-          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+          "Link": "PotSoft?id=Inicio&key=ModulosProduccion"
         },
         {
           "Title": "Unidades de producción",
-          "Link": "PotSoft?id=Inicio&key=Instalacion"
+          "Link": "PotSoft?id=Inicio&key=UnidadesProduccion"
         },
         {
           "Title": "Lotes de producción",
