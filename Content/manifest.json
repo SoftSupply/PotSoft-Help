@@ -101,6 +101,10 @@
       "Title": "<b>Operaciones</b>",
       "Items": [
         {
+          "Title": "Inicio",
+          "Link": "PotSoft?id=Inicio&key=Operaciones"
+        },
+        {
           "Title": "Notificar actividades",
           "Link": "PotSoft?id=Inicio&key=Requerimientos"
         },
@@ -143,7 +147,7 @@
       ]
     },
     {
-      "Title": "<b>Rportes</b>",
+      "Title": "<b>Reportes</b>",
       "Items": [
         {
           "Title": "Actividades/Labores programadas",
