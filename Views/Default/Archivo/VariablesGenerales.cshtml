@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Productos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana le muestra las variables personalizadas de ámbito general que se encuentran registradas en el sistema así como el tipo de las mismas.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Los datos mostrados en esta ventana pueden ordenarse según sus necesidades simplemente con hacer clic sobre
+                    el encabezado de la columna por la cual desea ordenarlos; al hacer clic la primera vez sobre la columna,
+                    los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado de columna una segunda vez,
+                    los datos se ordenarán descendentemente.<br>
+                    Igualmente puede seleccionar la opción de mostrar sólo los activos.
+                </p>
+                <p>
+                    Desde esta ventana puede <b>Agregar</b>, <b>Modificar</b> y <b>Eliminar</b> variables personalizadas de ámbito general mediante los botones de la ventana y al mismo tiempo puede asignar valores a las Variables.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+</article>

@@ -37,63 +37,63 @@
         },
         {
           "Title": "Lotes de producción",
-          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+          "Link": "PotSoft?id=Inicio&key=LotesProduccion"
         },
         {
           "Title": "Actividades / Labores",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=ActividadesLabores"
         },
         {
           "Title": "Especies de animales",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=EspeciesAnimales"
         },
         {
           "Title": "Categorías de animales",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=CategoriasAnimales"
         },
         {
           "Title": "Grupos de animales",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=GruposAnimales"
         },
         {
           "Title": "Cultivos",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Cultivos"
         },
         {
           "Title": "Diagnóstico para plantas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=DiagnosticoPlantas"
         },
         {
           "Title": "Tratamientos para plantas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=TratamientosPlantas"
         },
         {
           "Title": "Pruebas para plantas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=PruebasPlantas"
         },
         {
           "Title": "Planos no asociados",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Planos"
         },
         {
           "Title": "Pluviómetros",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Pluviometros"
         },
         {
           "Title": "Productos",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Productos"
         },
         {
           "Title": "Unidades de medición",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=UnidadesMedicion"
         },
         {
           "Title": "Variables generales",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=VariablesGenerales"
         },
         {
           "Title": "Salir",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Salir"
         }
       ]
     },

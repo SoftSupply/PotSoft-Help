@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Actividades / Labores";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana le muestra las actividades registradas en el sistema.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Actividades / Labores</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Las actividades se muestran categorizadas en forma de árbol, de esta manera el sistema le permite crear sus propias actividades organizándolas y agrupándolas por tipo o categoría. 
+                    Desde esta ventana puede <b>Agregar</b>, <b>Modificar</b> o <b>Eliminar</b> las actividades del sistema . Al posicionarse en actividades (1ª División), sólo podrá agregar una actividad conjunto; si no hay ninguna creada, entonces podrá modificar o eliminar la 1ª.
+                </p>
+                <p>
+                    Al posicionarse en la segunda actividad podrá agregar una subdivisión, o modificar la misma. Solo podrá eliminar las actividades en orden ascendente de las subdivisiones. El usuario puede agregar infinidad de actividades e igualmente actividades dentro de cada una de ellas.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+</article>

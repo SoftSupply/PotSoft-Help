@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Productos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana le muestra todos los productos registrados en el sistema con su código y unidad de medida e indicando si acepta o no medidas referenciales.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Esta ventana le permitirá agregar un nuevo producto al sistema, y modificar o eliminar los ya registrados.
+                    Los datos mostrados en esta ventana pueden ordenarse según sus necesidades simplemente con hacer clic sobre
+                    el encabezado de la columna por la cual desea ordenarlos; al hacer clic la primera vez sobre la columna,
+                    los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado de columna una segunda vez,
+                    los datos se ordenarán descendentemente.<br>
+                    Igualmente puede seleccionar la opción de mostrar sólo los activos.
+                </p>
+                <p>
+                    Para salir de la ventana podrá hacerlo mediante el teclado como esta indicado en la parte inferior de la ventana, con los botones <Esc> y <F1>.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+</article>
