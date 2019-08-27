@@ -106,43 +106,43 @@
         },
         {
           "Title": "Notificar actividades",
-          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+          "Link": "PotSoft?id=Inicio&key=NotificarActividades"
         },
         {
-          "Title": "Notificar producto",
-          "Link": "PotSoft?id=Inicio&key=Instalacion"
+          "Title": "Notificar producción",
+          "Link": "PotSoft?id=Inicio&key=NotificarProduccion"
         },
         {
           "Title": "Notificar movimiento",
-          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+          "Link": "GanSoftPro?id=Inicio&key=NotificarMovimientos"
         },
         {
           "Title": "Administración en multipunto",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=AdministracionMultipuntos"
         },
         {
           "Title": "Notificar diagnótico en plantas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=NotificarDiagnostico"
         },
         {
           "Title": "Notificar tratamientos en plantas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=NotificarTratamientos"
         },
         {
           "Title": "Notificar pruebas en plantas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=NotificarPruebas"
         },
         {
           "Title": "Pluviosidad",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Pluviosidad"
         },
         {
           "Title": "Programación de actividades",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=ProgramacionActividades"
         },
         {
-          "Title": "Consultar inventarios",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Title": "Consultar inventario",
+          "Link": "PotSoft?id=Inicio&key=ConsultarInventario"
         }
       ]
     },
