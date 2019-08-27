@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Notificar movimientos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En esta ventana notificará los movimientos de animales correspondientes a cada lote.Todo movimiento de animales debe involucrar por lo menos un lote de producción y un grupo de animales,
+            en el caso de movimientos de los tipos Rotación y Traslado, se involucran dos (2) lotes y dos grupos de animales.
+        </p>
+        <p class="lead">
+            Un lote vacío (sin animales ni grupos) sólo puede realizar movimientos de compra ó ajuste positivo, en este caso, luego de seleccionar el lote, debe seleccionar el grupo de animales.
+            Sólo un grupo de animales puede ocupar un lote a la vez. Si no tiene grupos vacíos disponibles para este movimiento, puede crearlos presionando el botón situado al lado derecho de la caja de texto del código del grupo.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Movimientos">Movimientos</a>
+            </li>
+            <li>
+                <a href="#PeriodosMantenimiento">Iniciar o finalizar períodos de mantenimiento</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Movimientos">Movimientos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Los movimientos que le permite registrar el sistema son:
+                    <ul>
+                        <li><b>Rotación: </b>Este movimiento implica sacar todos los animales de este lote y meterlos a otro lote perteneciente a la misma unidad. Se requiere especificar un lote de destino. Si establece este movimiento, automáticamente se rotarán todos los animales de todas las categorías en el lote.</li>
+                        <li><b>Nacimiento: </b>Sólo debe especificar el número de animales nacidos en cada categoría.</li>
+                        <li> <b>Compra: </b>Sólo debe especificar el número de animales comprados en cada categoría.</li>
+                        <li><b>Ajuste positivo: </b>Este movimiento le permite incrementar el número de animales en el inventario sin establecer una causa previa. Sólo debe especificar el número de animales agregados en cada categoría.</li>
+                        <li><b>Muerte: </b>Sólo debe especificar el número de animales muertos en cada categoría.</li>
+                        <li><b>Sacrificio: </b>Sólo debe especificar el número de animales sacrificados en cada categoría. </li>
+                        <li><b>Robo: </b>Sólo debe especificar el número de animales robados en cada categoría.</li>
+                        <li><b>Donación: </b>Sólo debe especificar el número de animales donados en cada categoría. </li>
+                        <li> <b>Ajuste negativo: </b>Este movimiento le permite disminuir el número de animales en el inventario sin establecer una causa previa. Sólo debe especificar el número de animales retirados en cada categoría. </li>
+                        <li>
+                            <b>Cambio de categoría: </b>Este movimiento implica que un determinado número de animales de una categoría
+                            han pasado a una categoría del mismo sexo con un equivalente en unidades animales igual o superior al actual. Debe especificar el número de animales que cambiarán de categoría y la nueva categoría.
+                        </li>
+                        <li>
+                            <b>Traslado: </b>Este movimiento implica sacar un determinado número de animales de una categoría del lote actual para ingresarlos a un lote de una unidad diferente perteneciente al mismo módulo.
+                            Debe especificar el número de animales a trasladar y el lote destino. Si la unidad a la cual va a trasladar estos animales no tiene animales en ningún lote, podrá trasladarlos a cualquiera de los
+                            lotes de dicha unidad; si por el contrario, uno de los lotes de la unidad destino tiene animales, entonces sólo podrá trasladar los animales a ese lote.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="PeriodosMantenimiento">Iniciar o finalizar períodos de mantenimiento</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Un período de mantenimiento es un lapso de tiempo en el cual no entrarán animales al lote de producción y que no será
+                    evaluado al realizar cálculos estadísticos de productividad. Para iniciar el período de mantenimiento de un lote, el
+                    mismo debe estar vacío. El único movimiento permitido sobre un lote en período de mantenimiento es la finalización del mismo.
+                </p>
+                <p>
+                    Los movimientos de animales entre lotes (traslado y rotación) sólo pueden realizarse dentro de lotes pertenecientes al mismo
+                    módulo de producción. Las categorías de animales cuyos nombres aparezcan en color rojo indican que actualmente no tienen animales
+                    de esa categoría en el lote seleccionado.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+            <div class="col-md-8">
+                <p>
+                    Los pasos para asentar movimientos de animales son los siguientes:
+                    <ol>
+                        <li>
+                            <b>Establezca el Lote de Producción donde se llevará a cabo el movimiento: </b>El lote de producción puede seleccionarse de dos maneras:
+                            <ul>
+                                <li>Escribiendo el código del lote y pulsando <b>Enter</b>.</li>
+                                <li>
+                                    Invoque la ventana de consulta de lotes de producción pulsando el botón ubicado a la derecha del campo reservado para el código o bien pulsando la tecla <b>F2</b>.
+                                    Una vez abierta la ventana de consulta de lotes de producción, el usuario podrá seleccionar una actividad de cualquiera de las siguientes maneras:
+                                    <ul>
+                                        <li> Haciendo doble-clic sobre el lote que desee seleccionar.</li>
+                                        <li> Seleccionando el lote que desee y luego pulsando el botón <b>Ok</b>.</li>
+                                        <li>Seleccionando el lote que desee y luego pulsando la tecla <b>Enter</b>.</li>
+                                        <li> Establezca la fecha y hora del movimiento.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <b>Establezca el Grupo de Animales involucrado en el movimiento</b>.</li>
+                        <li> <b>Establezca la fecha de movimiento</b>. </li>
+                        <li> <b>Establezca el tipo de movimiento: </b>Simplemente selecciónelo de la lista desplegable.</li>
+                        <li>
+                            <b>Establezca el lote de destino: </b>Si el movimiento seleccionado así lo requiere, seleccione el lote destino de la lista desplegable. La lista desplegable mostrará lotes que cumplan con las siguientes condiciones:
+                            <ul>
+                                <li> Sea el lote actual.</li>
+                                <li> Si el movimiento es de rotación: sólo mostrará los lotes de ese mismo módulo que no se encuentren en período de mantenimiento.</li>
+                                <li> Seleccionando el lote que desee y luego pulsando la tecla <b>Enter</b>.</li>
+                                <li> Si el movimiento es de traslado: sólo mostrará los lotes de ese mismo módulo que estén ocupados.</li>
+                            </ul>
+                        </li>
+                        <li><b>Establezca el grupo de destino en caso de ser necesario</b>.</li>
+                        <li><b>Establezca un comentario para el movimiento en general: </b>Esto es opcional.</li>
+                        <li><b>Establezca para cada categoría la cantidad de animales involucrados: </b>Siga los lineamientos de cada tipo de movimiento. Los campos Peso, Monto y comentario son todos opcionales.</li>
+                        <li>
+                            <b>Para inicializar o finalizar un período de mantenimiento: </b>Seleccione el tab <b>Mantenimiento</b>. Si el lote se encuentra en estado de mantenimiento, el sistema se le indicará, así como la fecha de inicio
+                            del período de mantenimiento; para finalizar el período de mantenimiento simplemente pulse el botón <b>Finalizar mantenimiento</b>. Si el lote no se encuentra en mantenimiento, el sistema lo indicará y mostrará la
+                            fecha de finalización del último período de mantenimiento (si es que alguna vez el lote ha estado en mantenimiento); para iniciar un período de mantenimiento, simplemente pulse el botón iniciar mantenimiento.
+                        </li>
+                        <li><b>Guarde los movimientos: </b>Pulse el botón <b>Guardar</b>. Si pulsa el botón deshacer la rejilla de movimientos volverá a su estado inicial.</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
