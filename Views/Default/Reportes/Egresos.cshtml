@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Egresos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Para imprimir el reporte el usuario deberá seleccionar, en primera instancia, un módulo del combo ubicado en la parte superior de la ventana.
+        </p>
+    </div>
+    @*<div class="col-md-12">
+            <ul class="index">
+                <li> <a href="#Seleccionar">Seleccionar módulo de producción</a></li>
+                <li> <a href="#SeleccionarActividad">Seleccionar actividad</a></li>
+                <li> <a href="#EstablecerCantidad">Establecer cantidad</a></li>
+                <li> <a href="#EstablecerCosto">Establecer costo de realización</a></li>
+                <li> <a href="#AgregarComentario">Agregar comentario</a></li>
+                <li> <a href="#BotonAgregar">Pulsar botón Agregar</a></li>
+            </ul>
+        </div>*@
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Una vez hecho esto aparecerán, en el cuadro que se encuentra directamente debajo del combo, las diferentes unidades y lotes de producción del módulo, 
+                    se deberá entonces marcar aquellos cuyas actividades programadas se desea imprimir, para ello el usuario puede hacer clic con el mouse sobre la casilla 
+                    de selección ubicada a la izquierda del nombre de la unidad o lote, o usar los botones ubicados a la derecha del cuadro:
+                    <ul>
+                        <li><b>Marcar todos: </b>Marca para imprimir todas las unidades y lotes del módulo..</li>
+                        <li><b>Desmarcar todos: </b>Quita la marca de todas las unidades y lotes del módulo, es importante destacar que si no hay ninguna unidad o lote marcada el reporte no se imprimirá.</li>
+                        <li><b>Marcar hijos: </b>Marca todas los hijos del nodo seleccionado.</li>
+                        <li><b>Desmarcar hijos: </b>Quita la marca de todos los hijos del nodo guardado.</li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+            <div class="col-md-8">
+                <p>
+                    Igualmente el usuario podrá seleccionar, de la lista de actividades, aquellas que desee aparezcan reflejadas en el reporte a imprimir, para hacer esto el procedimiento es similar al de la selección de unidades y lotes.
+                </p>
+                <p>
+                    Además, si el usuario desea que solo aparezcan las actividades programadas para un determinado período de tiempo, deberá marcar la opción "Validar entre Fechas", al hacerlo se habilitarán las cajas de fecha inicial y final.
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Si la opción "Validar entre Fechas"" está marcada el reporte se filtrará entre las fechas indicadas, para evitar el filtro, deberá desmarcar esta opción.
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p>
+                En cuanto al orden del reporte el usuario tiene dos niveles de ordenamiento, en los combos ubicados en la parte inferior de la pantalla, el usuario, podrá seleccionar el/los campo(s) por el/los que desea ordenar el reporte, y haciendo clic en el botón ubicado al lado derecho de cada combo podrá indicar si el orden es ascendente o descendente.
+            </p>
+        </div>
+    </div>
+</article>

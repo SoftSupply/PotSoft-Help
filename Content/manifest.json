@@ -1,4 +1,4 @@
-﻿{
+{
   "Name": "PotSoft",
   "Title": "PotSoft",
   "Description": "Software para el control de potreros y cultivos",
@@ -151,43 +151,43 @@
       "Items": [
         {
           "Title": "Actividades/Labores programadas",
-          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+          "Link": "PotSoft?id=Inicio&key=ActividadesProgramadas"
         },
         {
           "Title": "Actividades/Labores realizadas",
-          "Link": "PotSoft?id=Inicio&key=Instalacion"
+          "Link": "PotSoft?id=Inicio&key=ActividadesRealizadas"
         },
         {
           "Title": "Producción",
-          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+          "Link": "PotSoft?id=Inicio&key=Produccion"
         },
         {
           "Title": "Producción por unidad de superficie",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=ProduccionUnidad"
         },
         {
           "Title": "Listado de diagnóstico, tratamientos y pruebas en plantas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=ListadoDiagnostico"
         },
         {
           "Title": "Listado de plantas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=ListadoPlantas"
         },
         {
           "Title": "Listado de plantas con diagnóstico, tratamientos y/o pruebas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=ListadoPlantasDiagnostico"
         },
         {
           "Title": "Movimientos de animales",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=MovimientosAnimales"
         },
         {
           "Title": "Estadísticas",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Estadisticas"
         },
         {
           "Title": "Egresos",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Egresos"
         }
       ]
     },
