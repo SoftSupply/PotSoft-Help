@@ -1,0 +1,143 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Pluviosidad";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana le permite consultar, introducir y modificar datos de Pluviometría para un pluviómetro determinado. Para este efecto, el sistema emplea una metáfora de calendario, es decir, se muestran las mediciones pluviométricas de cada día del mes seleccionado dispuestas en forma de calendario.
+        </p>
+        <p>
+            Para operar con los datos de Pluviometría debe seguir los siguientes pasos:
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li><a href="#EstablecerFecha">Establecer la fecha</a></li>
+            <li><a href="#EstablecerPluviometro">Establecer el pluviómetro con el cual desea operar</a></li>
+            <li><a href="#EspecificarMedida">Especificar la unidad de medida en la que se registrarán/mostrarán las medidas</a></li>
+            <li><a href="#IntroducirMediciones">Introduzca o modifique datos de mediciones</a></li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="EstablecerFecha">Establecer la fecha</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Debe establecer la fecha para la cual desea registrar o consultar las mediciones; para ello debe hacer lo siguiente:
+                    <ul>
+                        <li>Haga clic con el ratón sobre el campo fecha, esto invocará al calendario, mediante el cual seleccionará la fecha.</li>
+                        <li>Haga doble-clic sobre cualquier fecha, el sistema sólo empleará el mes.</li>
+                        <li>Para cambiar de mes en el calendario, pulse los botones ubicados en la extrema izquierda y la extrema derecha del mes y año mostrado.</li>
+                        <li>Para cambiar el año en el calendario sin cambiar el mes, haga clic en el nombre del mes, seguidamente aparecerán a la derecha del mes dos botones alineados verticalmente; pulse el botón que se ajuste a sus necesidades.</li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+            <div class="col-md-8">
+                <p>
+                    Los datos básicos requeridos para definir un lote de producción son:
+                    <ul>
+                        <li>
+                            <b>Código: </b> Debe especificarse un código único para cada lote de producción, de 1 carácter de longitud como mínimo y de 4 caracteres de longitud como máximo. Los caracteres pueden ser alfanuméricos y siempre se tomarán en mayúsculas.
+                        </li>
+                        <li>
+                            <b>Nombre del lote: </b> Debe especificarse un nombre único para cada lote de producción, de 1 carácter de longitud como mínimo y de 40 caracteres de longitud como máximo. Los caracteres pueden ser alfanuméricos.
+                        </li>
+                        <li>
+                            <b>Cultivos: </b> En este tab puede asociar cultivos al lote; que este lote empleará; en la lista de la izquierda se muestran los cultivos registrados en el sistema, mientras que en la lista de la derecha se muestran los cultivos que han sido asociados al lote de producción.
+                            Para asociar cultivos al lote de producción, simplemente marque la casilla de verificación ubicada al lado izquierdo de cada cultivo y pulse el botón <b>Agregar</b>, o bien puede hacerlo individualmente haciendo doble-clic sobre cada uno de ellos. Si no encuentra el cultivo
+                            deseado en la lista, puede invocar la ventana de categorías del sistema pulsando el botón correspondiente o pulsando la tecla <b>F3</b>.<br>
+                            Debajo de la lista aparecen categorías asociadas; hay 3 botones:
+                            <ul>
+                                <li>
+                                    <b>Modificar: </b>Le permite Modificar las propiedades del cultivo seleccionado. Para seleccionar un cultivo no es necesario marcar su casilla de verificación.
+                                </li>
+                                <li>
+                                    <b>Eliminar: </b>Elimina los cultivos asociadas al lote de producción cuya casilla de verificación esté marcada.
+                                </li>
+                                <li>
+                                    <b>Eliminar todas: </b>Elimina todos los cultivos asociados al módulo de producción aunque sus casillas de verificación no estén marcadas.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Inventario de animales: </b> Muestra el listado de animales que se encuentran en el lote de producción.
+                        </li>
+                        <li>
+                            <b>Variables: </b> Si ha definido variables personalizadas para los lotes de producción podrá Asignar Valores a Variables de Lote correspondiente a cada una de ellas,
+                            simplemente seleccionado la celda correspondiente al valor de la variable y comenzar a escribir su valor. Si no hay variables definidas o necesita definir una variable en especial pulse el botón Variables o pulse la tecla <b>F3</b>.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="EstablecerPluviometro">Establecer el pluviómetro con el cual desea operar</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Debe seleccionar un pluviómetro de la lista desplegable de pluviómetros. Si no hay pluviómetros registrados, o bien el pluviómetro para el cual desea registrar las mediciones no se encuentra en la lista, puede crearlo invocando la ventana de pluviómetros; dicha ventana puede invocarse de dos maneras:
+                    <ul>
+                        <li>Asegúrese que la lista desplegable de pluviómetros tiene el foco y pulse la tecla <b>F2</b></li>
+                        <li>Haga clic en el botón ubicado a la derecha de la lista desplegable de pluviómetros.</li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="EspecificarMedida">Especificar la unidad de medida en la que se registrarán/mostrarán las medidas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Al crear un pluviómetro, se determina si el pluviómetro se mide en milímetros o en pulgadas, sin embargo, al momento de introducir o consultar las
+                    mediciones de cualquier pluviómetro el usuario puede determinar si quiere operar con datos en milímetros o en pulgadas según le resulte más cómodo.
+                    Esta función no modifica la configuración del pluviómetro seleccionado, sólo hace las conversiones de unidades necesarias para lograr el efecto visual deseado.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="IntroducirMediciones"> Introduzca o modifique datos de mediciones </h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    <ul>
+                        <li>Haga clic en el recuadro blanco inmediato inferior al día del mes y escriba el valor. Si deja la casilla con valor 0 se borrará esa medición, si trata de ingresar un valor más alto que la capacidad máxima del pluviómetro (establecida al crear el pluviómetro), se tomará la medida máxima del mismo.</li>
+                        <li>Las fechas en negro corresponden al mes seleccionado, mientras que las fecha en blanco corresponden bien sea al mes anterior o al mes siguiente.</li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+            <div class="col-md-8">
+                <p>En la parte inferior de la ventana se muestran tanto el acumulado del mes como el acumulado del año seleccionado.</p>
+            </div>
+        </div>
+    </div>
+</article>
