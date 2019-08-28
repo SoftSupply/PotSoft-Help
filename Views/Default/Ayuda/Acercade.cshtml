@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Acerca de...";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            A través de esta opción es posible desplegar una nueva ventana que contiene las especificaciones de la versión así como también los créditos del diseño del sistema PotSoft y los derechos reservados del software.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Adicionalmente, en la esquina superior derecha de la ventana encontrará la fecha de la última revisión de la versión que usted posee, de forma tal que le sea fácil conocer
+                    si se encuentra al día en cuanto a las mejoras y actualizaciones realizadas al programa.<br>
+                    Para mayor información acerca de las últimas versiones del producto, visite nuestra página Web <a href="https://softsupply.com">www.softsupply.com</a>, en la que podrá encontrar información detallada de las mejoras de PotSoft. 
+                    Una vez visualizada la información que se presenta en la ventana, presione el botón <b>Aceptar</b> para regresar a la pantalla principal de PotSoft.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+</article>
