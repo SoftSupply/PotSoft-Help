@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
-    ViewBag.Title = "Categorías de animales";
+    ViewBag.Title = "Grupos de animales";
     ViewBag.SubTitle = "";
     ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
@@ -11,8 +11,7 @@
     </div>
     <div class="col-md-12">
         <p class="lead">
-            Esta ventana muestra un listado con las diferentes categorías adscritas al sistema y sus características (sexo, especie, si nace, se reproduce, si esta activa o si da leche
-            y su equivalencia en unidades animal).
+            Esta ventana le muestra los grupos de animales registrados en el módulo de producción seleccionado.
         </p>
     </div>
     <div class="col-md-12">
@@ -20,11 +19,10 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    Le permite <b>Agregar</b>, <b>Modificar</b> y <b>Eliminar</b> categorías de animales. Los datos
-                    mostrados en esta ventana pueden ordenarse según sus necesidades simplemente con hacer
-                    clic sobre el encabezado de la columna por la cual desea ordenarlos; al hacer clic la primera
-                    vez sobre la columna, los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado
-                    de columna una segunda vez, los datos se ordenarán descendentemente.
+                    Desde esta ventana puede <b>Agregar</b>, <b>Modificar</b> o <b>Eliminar</b> grupos de animales 
+                    registrados en el sistema. Esta ventana muestra el código y el nombre de cada grupo de animales, 
+                    así como el código del lote en el que se encuentran esos animales actualmente y la cantidad de 
+                    animales en el grupo.
                 </p>
             </div>
             @*<div class="col-md-4">
@@ -34,15 +32,17 @@
         </div>*@
             <div class="col-md-8">
                 <p>
-                    Podrá seleccionar si desea que el sistema muestre sólo los activos presionando con el mouse en la 
-                    casilla correspondiente.
+                    Los datos mostrados en esta ventana pueden ordenarse según sus necesidades simplemente con hacer 
+                    clic sobre el encabezado de la columna por la cual desea ordenarlos; al hacer clic la primera vez 
+                    sobre la columna, los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado de 
+                    columna una segunda vez, los datos se ordenarán descendentemente.
                 </p>
             </div>
             <div class="col-md-8">
                 <p>
                     Podrá solicitar la ayuda del sistema presionando la tecla <b>F1</b> o con el mouse el botón 
-                    correspondiente. Igualmente podrá salir de la ventana por medio de la tecla <b>Esc</b> o por el 
-                    botón correspondiente.
+                    correspondiente. Igualmente podrá salir de la ventana por medio de la tecla o por el botón 
+                    correspondiente.
                 </p>
             </div>
         </div>

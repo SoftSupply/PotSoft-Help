@@ -11,8 +11,12 @@
     </div>
     <div class="col-md-12">
         <p class="lead">
-            En esta ventana se realiza la notificación de realización de actividades en cualquier módulo, unidad o lote. Una vez seleccionado un módulo,
-            sólo podrá seleccionar aquellas unidades de producción definidas en el mismo; análogamente, al seleccionar una unidad de producción sólo podrá seleccionar los lotes de producción de la misma.
+            En esta ventana se realiza la notificación de realización de actividades en cualquier módulo, unidad o lote.
+        </p>
+        <p>
+            Una vez seleccionado un módulo, sólo podrá seleccionar aquellas unidades de producción definidas en el
+            mismo; análogamente, al seleccionar una unidad de producción sólo podrá seleccionar los lotes de producción
+            de la misma.
         </p>
     </div>
     <div class="col-md-12">
@@ -22,7 +26,7 @@
             <li> <a href="#EstablecerCantidad">Establecer cantidad</a></li>
             <li> <a href="#EstablecerCosto">Establecer costo de realización</a></li>
             <li> <a href="#AgregarComentario">Agregar comentario</a></li>
-            <li> <a href="#BotonAgregar">Pulsar botón Agregar</a></li>
+            <li> <a href="#BotonAgregar">Pulsar botón agregar</a></li>
         </ul>
     </div>
     <div class="col-md-12">
@@ -41,8 +45,11 @@
                                 <li>Seleccionando el módulo que desee y luego pulsando el botón <b>Ok</b>. </li>
                                 <li>Seleccionando el módulo que desee y luego pulsando la tecla <b>Enter</b>.</li>
                             </ul>
-                            Una vez seleccionado el módulo, puede seleccionar la unidad perteneciente a este módulo que desee de manera análoga a la selección del módulo. Lo mismo se aplica a la selección del lote.<br>
-                            Habiendo seleccionado la ubicación de la realización de la actividad, puede procederse a notificar la realización de la actividad en si. Para ello debe observarse el siguiente procedimiento:
+                            <br>
+                            Una vez seleccionado el módulo, puede seleccionar la unidad perteneciente a este módulo que desee de manera análoga a la selección del módulo.
+                            Lo mismo se aplica a la selección del lote.<br><br>
+                            Habiendo seleccionado la ubicación de la realización de la actividad, puede procederse a notificar la realización de la actividad en si.
+                            Para ello debe observarse el siguiente procedimiento:
                         </li>
                     </ol>
                 </p>
@@ -66,7 +73,7 @@
                         <li> Seleccionando el módulo que desee y luego pulsando la tecla <b>Enter</b>. </li>
                         <li>
                             Seleccionando la actividad de la lista de actividades programadas para el elemento
-                            seleccionado (es decir, módulo, unidad o lote): para esto pulse el botón Programadas, el cual invocará
+                            seleccionado (es decir, módulo, unidad o lote): para esto pulse el botón <b>Programadas</b>, el cual invocará
                             la ventana de actividades programadas, seleccione la actividad deseada y pulse <b>Enter</b>, o bien haga
                             doble-clic sobre la actividad para seleccionarla.
                         </li>
@@ -85,7 +92,9 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    Debe indicar la cantidad de unidades en que se mide la realización de la actividad empleadas en su realización. Si los costos de actividad se calculan por realización (monto global) esta opción que da inhabilitada.
+                    Debe indicar la cantidad de unidades en que se mide la realización de la actividad empleadas en
+                    su realización. Si los costos de actividad se calculan por realización (monto global) esta opción
+                    queda inhabilitada.
                 </p>
             </div>
             @*<div class="col-md-4">
@@ -100,8 +109,13 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    El sistema le sugerirá el costo de la actividad según el número de unidades de medida empleadas basándose en la configuración de costo de realización establecida en las propiedades de actividades asociadas al módulo.
-                    El usuario puede variar este costo al notificar la actividad según su criterio; de ser así, el sistema realizará automáticamente los ajustes necesarios en la configuración de costos de realización de la actividad asociada al módulo de producción. Establezca la fecha y hora de inicio y finalización de la actividad.
+                    El sistema le sugerirá el costo de la actividad según el número de unidades de medida empleadas
+                    basándose en la configuración de costo de realización establecida en las propiedades de actividades
+                    asociadas al módulo.
+                    El usuario puede variar este costo al notificar la actividad según su criterio; de ser así, el
+                    sistema realizará automáticamente los ajustes necesarios en la configuración de costos de realización
+                    de la actividad asociada al módulo de producción. Establezca la fecha y hora de inicio y finalización
+                    de la actividad.
                 </p>
             </div>
             @*<div class="col-md-4">
@@ -120,6 +134,13 @@
                     marque la casilla de verificación mantener comentario, de lo contrario el campo para el comentario
                     se limpiará cada vez que agregue una actividad.
                 </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+            <div class="col-md-8">
                 <p>
                     En la parte inferior de la ventana hay 3 botones que le permiten:
                     <ul>
@@ -129,34 +150,35 @@
                     </ul>
                 </p>
             </div>
-            @*<div class="col-md-4">
-                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
-                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
-                    </a>
-                </div>*@
         </div>
     </div>
     <div class="col-md-12">
-        <h3 id="BotonAgregar">Pulsar botón Agregar</h3>
+        <h3 id="BotonAgregar">Pulsar botón agregar</h3>
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    Si todos los datos necesarios han sido introducidos, entonces puede agregar la actividad a la lista de actividades notificadas que aparece en la parte inferior
-                    de la ventana, la cual muestra un sumario de cada actividad notificada. Si lo desea, puede eliminar cualquiera de las actividades
-                    notificadas seleccionándola y pulsando el botón <b>Eliminar</b>; si elimina una actividad que había sido previamente programada, esta volverá a su estado inicial,
-                    es decir, seguirá estando como pendiente en la programación de actividades. Adicionalmente, si la actividad es periódica, el sistema le preguntará si desea reprogramarla
-                    para realizarse dentro del número de días especificado en la configuración de actividades de módulo a partir de la fecha de realización.
+                    Si todos los datos necesarios han sido introducidos, entonces puede agregar la actividad a la lista
+                    de actividades notificadas que aparece en la parte inferior de la ventana, la cual muestra un
+                    sumario de cada actividad notificada. Si lo desea, puede eliminar cualquiera de las actividades
+                    notificadas seleccionándola y pulsando el botón <b>Eliminar</b>;
+                    si elimina una actividad que había sido previamente programada, esta volverá a su estado inicial,
+                    es decir, seguirá estando como pendiente en la programación de actividades. <br><br>
+                    Adicionalmente, si la actividad es periódica, el sistema le preguntará si desea reprogramarla para realizarse dentro del
+                    número de días especificado en la configuración de actividades de módulo a partir de la fecha de realización.
                 </p>
-                <p>
-                    Si en lugar de notificar una actividad esta modificando un registro histórico de actividad realizada,
-                    entonces no se mostrará la lista de actividades agregadas y al pulsar el botón se cerrará la ventana.
-                </p>
+
             </div>
             @*<div class="col-md-4">
                     <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
                         <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
                     </a>
                 </div>*@
+            <div class="col-md-8">
+                <p>
+                    Si en lugar de notificar una actividad esta modificando un registro histórico de actividad realizada,
+                    entonces no se mostrará la lista de actividades agregadas y al pulsar el botón se cerrará la ventana.
+                </p>
+            </div>
         </div>
     </div>
 </article>
