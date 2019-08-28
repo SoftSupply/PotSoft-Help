@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Administración de usuarios";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana muestra todos los usuarios registrados en el sistema, así como el nivel de acceso de cada uno de ellos.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Los datos mostrados en esta ventana puede ordenarse según sus necesidades simplemente con hacer clic sobre el encabezado de la columna por la cual desea ordenarlos;
+                    al hacer clic la primera vez sobre la columna, los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado de columna una segunda vez, los datos se
+                    ordenarán descendentemente.<br>
+                    Al presionar el botón Agregar, Modificar y Eliminar Usuarios se activa la ventana de datos de usuarios, a través de la cual se agregan o modifican los usuarios.<br>
+                    Esta opción también puede ser accedida por medio del icono correspondiente ubicado en la parte superior de la ventana.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+</article>

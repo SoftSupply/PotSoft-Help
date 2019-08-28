@@ -1,4 +1,4 @@
-{
+﻿{
   "Name": "PotSoft",
   "Title": "PotSoft",
   "Description": "Software para el control de potreros y cultivos",
@@ -196,39 +196,39 @@
       "Items": [
         {
           "Title": "Cambiar contraseña",
-          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+          "Link": "PotSoft?id=Inicio&key=CambiarContraseña"
         },
         {
           "Title": "Cambiar usuario",
-          "Link": "PotSoft?id=Inicio&key=Instalacion"
+          "Link": "PotSoft?id=Inicio&key=CambiarUsuario"
         },
         {
           "Title": "Administración de usuarios",
-          "Link": "GanSoftPro?id=Inicio&key=Configuracion"
+          "Link": "PotSoft?id=Inicio&key=AdminUsuarios"
         },
         {
           "Title": "Respaldar datos",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=RespaldarDatos"
         },
         {
           "Title": "Restaurar datos",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=RestaurarDatos"
         },
         {
           "Title": "Reiniciar datos del sistema",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=ReiniciarDatos"
         },
         {
           "Title": "Calculadora",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Calculadora"
         },
         {
           "Title": "Calendario",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=Calendario"
         },
         {
           "Title": "Cambiar fondo del sistema",
-          "Link": "PotSoft?id=Inicio&key=Glosario"
+          "Link": "PotSoft?id=Inicio&key=CambiarFondo"
         }
       ]
     },
@@ -237,11 +237,11 @@
       "Items": [
         {
           "Title": "Contenido",
-          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+          "Link": "PotSoft?id=Inicio&key=Contenido"
         },
         {
           "Title": "Acerca de...",
-          "Link": "PotSoft?id=Inicio&key=Instalacion"
+          "Link": "PotSoft?id=Inicio&key=Acercade"
         }
       ]
     }

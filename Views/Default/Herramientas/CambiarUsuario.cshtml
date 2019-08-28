@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Cambiar usuario";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta opción permite seleccionar o cambiar el usuario que estará activo durante la ejecución del sistema. 
+            Para ello debe seleccionar un nombre de usuario de la lista desplegable e ingresar su clave.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Al presionar la tecla <b>Enter</b> "Aceptar" el programa verifica que la clave ingresada concuerde con la almacenada en el registro del usuario seleccionado.
+                    Si la clave no concuerda muestra el respectivo mensaje de error y no realiza la acción.<br>
+                    Si desea abandonar la ventana o cuadro de diálogo presione la tecla <b>Esc</b>, quedando como usuario activo el último usuario seleccionado.
+                    <br>
+                    Esta opción también puede ser accedida por medio del icono correspondiente ubicado en la parte superior de la ventana.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+</article>

@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Reiniciar datos del sistema";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta opción le permitirá al usuario Inicializar el Sistema, para ello cuenta con dos opciones las cuales son:
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    <ul>
+                        <li><b>Total: </b> toda la información existente en la base de datos será eliminada por medio de esta opción, quedando el sistema igual que al principio de la instalación.</li>
+                        <li><b>Solo registro de históricos: </b>podrá seleccionar que histórico desea inicializar (actividades, producción, movimientos).</li>
+                    </ul>
+                    Para realizar esta operación el sistema le pedirá una clave de acceso.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                </a>
+            </div>*@
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Nota</strong><br />
+                Luego de haber realizado la inicialización no podrá recuperar los datos eliminados.
+            </div>
+        </div>
+    </div>
+</article>
