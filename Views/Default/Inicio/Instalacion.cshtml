@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Instalación";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            El programa de instalación de PotSoft, puede ser descargado directamente desde nuestro sitio
+            web <a href="https://www.softsupply.com/" target="_blank">www.softsupply.com</a>, o
+            instalado desde un medio externo de almacenamiento (disco óptico o unidad USB).
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li> <a href="#Consideraciones">Consideraciones</a></li>
+            <li> <a href="#Comenzar">Comenzar</a></li>
+            <li> <a href="#Personalizacion">Personalización</a></li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Consideraciones">Consideraciones</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Para llevar a cabo el proceso de instalación de PotSoft, debe tomar en cuenta las siguientes consideraciones:
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            Si posee el CD de instalación de Productos TDPro, introdúzcalo en la unidad de CD ROM,
+                            seleccione PotSoft, espere unos segundos y aparecerá automáticamente en pantalla el programa
+                            que lo llevará de la mano a lo largo del proceso de instalación. Si esto no llegara a ocurrir o
+                            aparece un mensaje informando que falta algún archivo, entonces, debe proceder a realizar la
+                            instalación a través de la opción <b>Inicio</b> <b>Ejecutar</b> <b>Examinar</b>, seleccione la
+                            unidad CD ROM, haga doble clic sobre el icono Instalador PotSoft y siga los pasos que le indica el asistente.
+                        </li>
+                        <li>
+                            Si ha descargado el instalador desde nuestro sitio web, ejecute el archivo descargado (<b>IPotsoft.exe</b>), espere
+                            unos segundos y aparecerá automáticamente en pantalla el programa que lo llevará de la mano durante el proceso de
+                            instalación, siga los pasos que le indica el asistente.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/GanSoft Pro_1.jpg" class="thumbnail" data-lightbox="autorun" data-title="Menu de instalación">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/GanSoft Pro_1.jpg" alt="Autorun" />
+                </a>
+            </div>*@
+        </div>
+        <h3 id="Comenzar">Comenzar</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Una vez finalizado el proceso de instalación, proceda a ingresar al sistema, haciendo doble clic
+                    sobre el icono de PotSoft. <br><br>
+                    Se le solicitará una clave de acceso (si es primera vez coloque los datos Usuario: DEMO, Clave: DEMO)
+                    Luego de introducir la clave correcta, tendrá acceso al programa. Para conocer más acerca del mismo
+                    presione <b>F1</b> y se desplegará la ayuda que lo guiará por las diversas opciones que éste presenta.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/GanSoft Pro_6XL.jpg" class="thumbnail" data-lightbox="comienzo" data-title="Acceso directo del programa GanSoft (Inicial)">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/GanSoft Pro_6.jpg" alt="Configuración" />
+                </a>
+            </div>
+        </div>
+        <h3 id="Personalizacion">Personalización</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Si la instalación ha sido realizada desde el CD, debe ingresar en el menú <b>Herramientas</b> a la opción
+                    <b>Restaurar datos</b>, seleccione la unidad de CD y haga clic en el archivo de personalización del sistema
+                    (en caso de que se encuentre en el CD de Instalación), para que automáticamente PotSoft registre los
+                    datos de la Licencia y Titular.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/GanSoft Pro_6XL.jpg" class="thumbnail" data-lightbox="comienzo" data-title="Acceso directo del programa GanSoft (Inicial)">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/GanSoft Pro_6.jpg" alt="Configuración" />
+                </a>
+            </div>*@
+            <div class="col-md-8">
+                <p>
+                    Si se ha acordado el envío del archivo de personalización a su dirección de correo electrónico, proceda a descargarlo,
+                    indique la ruta de ubicación del mismo. Desde PotSoft, haga clic en la opción <b>Herramientas</b> <b>Restaurar datos</b> y 
+                    seleccione la ruta asignada al archivo descargado para hacer posible el registro de los datos de licencia y titular.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</article>
