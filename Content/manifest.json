@@ -114,14 +114,14 @@
         },
         {
           "Title": "Notificar movimiento",
-          "Link": "GanSoftPro?id=Operaciones&key=NotificarMovimientos"
+          "Link": "PotSoft?id=Operaciones&key=NotificarMovimientos"
         },
         {
           "Title": "Administración en multipunto",
           "Link": "PotSoft?id=Operaciones&key=AdministracionMultipuntos"
         },
         {
-          "Title": "Notificar diagnótico en plantas",
+          "Title": "Notificar diagnóstico en plantas",
           "Link": "PotSoft?id=Operaciones&key=NotificarDiagnostico"
         },
         {
