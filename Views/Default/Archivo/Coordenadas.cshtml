@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Coordenadas";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En esta ventana se ingresan las coordenadas Norte-Este de puntos geográficos para planimetría.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Los puntos serán asociados con el módulo de producción seleccionado en la lista desplegable; si no hay
+                    ningún punto seleccionado, entonces los puntos que se introduzcan sólo serán válidos para construir
+                    planos no asociados a ningún módulo, unidad o lote.
+                    <ul>
+                        <li><b>Punto: </b> El número que se le asignará al punto.</li>
+                        <li><b>Norte: </b> Coordenada norte del punto.</li>
+                        <li><b>Este: </b>Coordenada este del punto.</li>
+                        <li><b>Comentario: </b> Cualquier comentario que desee anexar al punto. Este campo es opcional.</li>
+                    </ul>
+                    Debajo de la lista aparecen categorías asociadas; hay 3 botones:
+                    <ul>
+                        <li><b>Insertar: </b>Inserta un punto en la posición seleccionada.</li>
+                        <li><b>Eliminar: </b>Elimina el punto seleccionado.</li>
+                    </ul>
+                </p>
+            </div>
+            @*<div class="col-md-4">
+            <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+            </a>
+        </div>*@
+            <div class="col-md-8">
+                <p>
+                    Para Modificar cualquier valor de un punto, sólo colóquese en la celda adecuada y escriba el valor.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

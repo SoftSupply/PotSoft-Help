@@ -68,6 +68,10 @@
           "Link": "PotSoft?id=Archivo&key=PruebasPlantas"
         },
         {
+          "Title": "Coordenadas",
+          "Link": "PotSoft?id=Archivo&key=Coordenadas"
+        },
+        {
           "Title": "Planos no asociados",
           "Link": "PotSoft?id=Archivo&key=Planos"
         },
