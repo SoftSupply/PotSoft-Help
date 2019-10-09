@@ -1,8 +1,8 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
-    ViewBag.Title = "PotSoft";
+    ViewBag.Title = "Bienvenido";
     ViewBag.SubTitle = "";
-    ViewBag.MainTitle = $"Manual de PotSoft {ViewBag.Manifest.Title}";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
 }
 
 <div class="row">
@@ -15,7 +15,7 @@
         </p>
     </div>
     <div class="col-md-2 text-center">
-        <img class="img-responsive" src="~/Areas/PotSoft/Content/img/logo.png" alt="Logo" />
+        <img class="img-responsive" src="~/Areas/PotSoft/Content/img/logo.png" alt="Logo PotSoft" />
     </div>
     <div class="col-md-10">
         <p>
