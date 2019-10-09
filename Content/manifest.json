@@ -1,0 +1,249 @@
+﻿{
+  "Name": "PotSoft",
+  "Title": "PotSoft",
+  "Description": "Software para el control de potreros y cultivos",
+  "Index": [
+    {
+      "Title": "<b>Inicio</b>",
+      "Items": [
+        {
+          "Title": "Requerimientos",
+          "Link": "PotSoft?id=Inicio&key=Requerimientos"
+        },
+        {
+          "Title": "Instalación",
+          "Link": "PotSoft?id=Inicio&key=Instalacion"
+        },
+        {
+          "Title": "Glosario de términos",
+          "Link": "PotSoft?id=Inicio&key=Glosario"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Archivo</b>",
+      "Items": [
+        {
+          "Title": "Módulos de producción",
+          "Link": "PotSoft?id=Archivo&key=ModulosProduccion"
+        },
+        {
+          "Title": "Unidades de producción",
+          "Link": "PotSoft?id=Archivo&key=UnidadesProduccion"
+        },
+        {
+          "Title": "Lotes de producción",
+          "Link": "PotSoft?id=Archivo&key=LotesProduccion"
+        },
+        {
+          "Title": "Actividades / Labores",
+          "Link": "PotSoft?id=Archivo&key=ActividadesLabores"
+        },
+        {
+          "Title": "Especies de animales",
+          "Link": "PotSoft?id=Archivo&key=EspeciesAnimales"
+        },
+        {
+          "Title": "Categorías de animales",
+          "Link": "PotSoft?id=Archivo&key=CategoriasAnimales"
+        },
+        {
+          "Title": "Grupos de animales",
+          "Link": "PotSoft?id=Archivo&key=GruposAnimales"
+        },
+        {
+          "Title": "Cultivos",
+          "Link": "PotSoft?id=Archivo&key=Cultivos"
+        },
+        {
+          "Title": "Diagnóstico para plantas",
+          "Link": "PotSoft?id=Archivo&key=DiagnosticoPlantas"
+        },
+        {
+          "Title": "Tratamientos para plantas",
+          "Link": "PotSoft?id=Archivo&key=TratamientosPlantas"
+        },
+        {
+          "Title": "Pruebas para plantas",
+          "Link": "PotSoft?id=Archivo&key=PruebasPlantas"
+        },
+        {
+          "Title": "Coordenadas",
+          "Link": "PotSoft?id=Archivo&key=Coordenadas"
+        },
+        {
+          "Title": "Planos no asociados",
+          "Link": "PotSoft?id=Archivo&key=Planos"
+        },
+        {
+          "Title": "Pluviómetros",
+          "Link": "PotSoft?id=Archivo&key=Pluviometros"
+        },
+        {
+          "Title": "Productos",
+          "Link": "PotSoft?id=Archivo&key=Productos"
+        },
+        {
+          "Title": "Unidades de medición",
+          "Link": "PotSoft?id=Archivo&key=UnidadesMedicion"
+        },
+        {
+          "Title": "Variables generales",
+          "Link": "PotSoft?id=Archivo&key=VariablesGenerales"
+        },
+        {
+          "Title": "Salir",
+          "Link": "PotSoft?id=Archivo&key=Salir"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Operaciones</b>",
+      "Items": [
+        {
+          "Title": "Inicio",
+          "Link": "PotSoft?id=Operaciones&key=Operaciones"
+        },
+        {
+          "Title": "Notificar actividades",
+          "Link": "PotSoft?id=Operaciones&key=NotificarActividades"
+        },
+        {
+          "Title": "Notificar producción",
+          "Link": "PotSoft?id=Operaciones&key=NotificarProduccion"
+        },
+        {
+          "Title": "Notificar movimiento",
+          "Link": "PotSoft?id=Operaciones&key=NotificarMovimientos"
+        },
+        {
+          "Title": "Administración en multipunto",
+          "Link": "PotSoft?id=Operaciones&key=AdministracionMultipuntos"
+        },
+        {
+          "Title": "Notificar diagnóstico en plantas",
+          "Link": "PotSoft?id=Operaciones&key=NotificarDiagnostico"
+        },
+        {
+          "Title": "Notificar tratamientos en plantas",
+          "Link": "PotSoft?id=Operaciones&key=NotificarTratamientos"
+        },
+        {
+          "Title": "Notificar pruebas en plantas",
+          "Link": "PotSoft?id=Operaciones&key=NotificarPruebas"
+        },
+        {
+          "Title": "Pluviosidad",
+          "Link": "PotSoft?id=Operaciones&key=Pluviosidad"
+        },
+        {
+          "Title": "Programación de actividades",
+          "Link": "PotSoft?id=Operaciones&key=ProgramacionActividades"
+        },
+        {
+          "Title": "Consultar inventario",
+          "Link": "PotSoft?id=Operaciones&key=ConsultarInventario"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Reportes</b>",
+      "Items": [
+        {
+          "Title": "Actividades/Labores programadas",
+          "Link": "PotSoft?id=Reportes&key=ActividadesProgramadas"
+        },
+        {
+          "Title": "Actividades/Labores realizadas",
+          "Link": "PotSoft?id=Reportes&key=ActividadesRealizadas"
+        },
+        {
+          "Title": "Producción",
+          "Link": "PotSoft?id=Reportes&key=Produccion"
+        },
+        {
+          "Title": "Producción por unidad de superficie",
+          "Link": "PotSoft?id=Reportes&key=ProduccionUnidad"
+        },
+        {
+          "Title": "Listado de diagnóstico, tratamientos y pruebas en plantas",
+          "Link": "PotSoft?id=Reportes&key=ListadoDiagnostico"
+        },
+        {
+          "Title": "Listado de plantas",
+          "Link": "PotSoft?id=Reportes&key=ListadoPlantas"
+        },
+        {
+          "Title": "Listado de plantas con diagnóstico, tratamientos y/o pruebas",
+          "Link": "PotSoft?id=Reportes&key=ListadoPlantasDiagnostico"
+        },
+        {
+          "Title": "Movimientos de animales",
+          "Link": "PotSoft?id=Reportes&key=MovimientosAnimales"
+        },
+        {
+          "Title": "Estadísticas",
+          "Link": "PotSoft?id=Reportes&key=Estadisticas"
+        },
+        {
+          "Title": "Egresos",
+          "Link": "PotSoft?id=Reportes&key=Egresos"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Herramientas</b>",
+      "Items": [
+        {
+          "Title": "Cambiar contraseña",
+          "Link": "PotSoft?id=Herramientas&key=CambiarContraseña"
+        },
+        {
+          "Title": "Cambiar usuario",
+          "Link": "PotSoft?id=Herramientas&key=CambiarUsuario"
+        },
+        {
+          "Title": "Administración de usuarios",
+          "Link": "PotSoft?id=Herramientas&key=AdminUsuarios"
+        },
+        {
+          "Title": "Respaldar datos",
+          "Link": "PotSoft?id=Herramientas&key=RespaldarDatos"
+        },
+        {
+          "Title": "Restaurar datos",
+          "Link": "PotSoft?id=Herramientas&key=RestaurarDatos"
+        },
+        {
+          "Title": "Reiniciar datos del sistema",
+          "Link": "PotSoft?id=Herramientas&key=ReiniciarDatos"
+        },
+        {
+          "Title": "Calculadora",
+          "Link": "PotSoft?id=Herramientas&key=Calculadora"
+        },
+        {
+          "Title": "Calendario",
+          "Link": "PotSoft?id=Herramientas&key=Calendario"
+        },
+        {
+          "Title": "Cambiar fondo del sistema",
+          "Link": "PotSoft?id=Herramientas&key=CambiarFondo"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Ayuda</b>",
+      "Items": [
+        {
+          "Title": "Contenido",
+          "Link": "PotSoft?id=Ayuda&key=Contenido"
+        },
+        {
+          "Title": "Acerca de...",
+          "Link": "PotSoft?id=Ayuda&key=Acercade"
+        }
+      ]
+    }
+  ]
+}

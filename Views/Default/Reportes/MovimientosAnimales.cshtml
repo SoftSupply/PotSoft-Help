@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Movimientos de animales";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Para imprimir el reporte el usuario deberá seleccionar, en primera instancia, un módulo del combo ubicado en 
+            la parte superior de la ventana.
+        </p>
+    </div>
+    
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Una vez hecho esto aparecerán, en el cuadro que se encuentra directamente debajo del combo, las diferentes unidades y lotes de producción del módulo,
+                    se deberá entonces marcar aquellos cuyos costos se desean imprimir, para ello el usuario puede hacer click con el mouse sobre la casilla de selección
+                    ubicada a la izquierda del nombre de la unidad o lote, o usar los botones ubicados a la derecha del cuadro:
+                    <ul>
+                        <li><b>Marcar todos: </b>Marca para imprimir todas las unidades y lotes del módulo..</li>
+                        <li><b>Desmarcar todos: </b>Quita la marca de todas las unidades y lotes del módulo, es importante destacar que si no hay ninguna unidad o lote marcada el reporte no se imprimirá.</li>
+                        <li><b>Marcar hijos: </b>Marca todas los hijos del nodo seleccionado.</li>
+                        <li><b>Desmarcar hijos: </b>Quita la marca de todos los hijos del nodo guardado.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/45.jpg" class="thumbnail" data-lightbox="Reporte histórico de movimiento" data-title="Reporte histórico de movimientos">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/45.jpg" alt="Reporte histórico de movimientos" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Además, si el usuario desea que solo aparezcan las actividades programadas para un determinado período de tiempo,
+                    deberá marcar la opción "Validar entre Fechas", al hacerlo se habilitarán las cajas de fecha inicial y final.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

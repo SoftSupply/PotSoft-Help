@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Consultar inventario";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En esta ventana se muestra el inventario de animales y cultivos registrados en el sistema ya sea de un 
+            módulo, unidad o lote; distribuidos de acuerdo al tipo de animal y cultivo.
+        </p>
+    </div>
+    @*<div class="col-md-12">
+            <h3>Especies de animales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Del menú Archivos seleccione <b>Salir</b>; aparecerá un mensaje en el que se le pedirá que confirme su deseo de salir de PotSoft. Elija el botón <b>Si</b> si desea salir del sistema o la opción <b>No</b> si desea seguir trabajando con el sistema.
+                </p>
+            </div>
+            <div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>
+        </div>
+        </div>*@
+</article>

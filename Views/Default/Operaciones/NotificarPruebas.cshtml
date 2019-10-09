@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Notificar pruebas en plantas";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta ventana podrá reportar y verificar las pruebas en plantas que se le están implementando a los cultivos de la finca.
+        </p>
+        <p>
+            Dependiendo de la configuración del módulo de producción podrá notificar las pruebas a nivel de lote para 
+            obtener mayor información alrespecto, consulte la ayuda de históricos de pruebas.
+        </p>
+    </div>
+</article>

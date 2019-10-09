@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Respaldar datos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Este procedimiento permite al usuario respaldar la base de datos del sistema PotSoft en cualquier unidad
+            seleccionada. Se recomienda sea llevada a cabo cada cierto tiempo de forma
+            tal que mantenga sus datos en una unidad externa con la finalidad de prever cualquier inconveniente con
+            el equipo que pueda afectar sus registros.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El sistema despliega un cuadro de diálogo desde el cual podrá llevar a cabo éste proceso.<br>
+                    Éste consta de tres secciones fundamentales:
+                    <ul>
+                        <li>
+                            <b>Guardar en: </b>Debe indicar la ubicación destino en la que se desea almacenar el respaldo.
+                            Puede ser una unidad Zip, pen drive o en la memoria del computador (Disco C, Mis documentos, entre otros).
+                        </li>
+                        <li>
+                            <b>Cuadro de contenido: </b>Muestra todos los archivos y carpetas que se encuentran en la
+                            dirección destino. Desde ésta sección es posible acceder a las diferentes carpetas haciendo
+                            doble clic en aquella que se desee abrir o seleccionando la carpeta y pulsar la tecla <b>Enter</b>
+                            (o clic en el botón <b>Abrir</b>).
+                        </li>
+                        <li>
+                            <b>Nombre de archivo: </b>Por defecto el sistema coloca PotSoft como nombre del archivo respaldo,
+                            pero puede ser cambiado a gusto del usuario. Se recomienda dejar este nombre y anexarle al final la fecha
+                            invertida del día en que se realiza el respaldo, para facilitar su búsqueda y ubicación. <br>
+                            <b>Ejemplo:</b> Respaldo realizado en el año 2008, en el mes de Febrero el día 26: PotSoft20080226
+                        </li>
+                    </ul>
+                    De esta forma para realizar el respaldo sólo debe seleccionar la unidad destino, indicar el nombre del archivo y presionar el botón <b>Guardar</b> situado al lado derecho de la ventana. El sistema hará una copia de seguridad,
+                    compactará la base de datos, la comprimirá y luego hará la copia del archivo comprimido en la unidad y directorio seleccionado.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/32.jpg" class="thumbnail" data-lightbox="Respaldar datos" data-title="Respaldar datos">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/32.jpg" alt="Respaldar datos" />
+                </a>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Nota</strong><br />
+                Las fotos de los animales (en caso de que se tengan) NO están incluidas en el respaldo ya que éstas NO forman parte de la base de datos.
+                El respaldo de las fotos se debe realizar independiente del respaldo de la base de datos que se hace a través de PotSoft. Debe copiar las
+                fotos y pegarlas en la ubicación destino (puede utilizar el Explorador de Windows o a través de Mi PC). Se recomienda que las fotos sean
+                guardadas inicialmente en la carpeta que se crea al momento de instalar PotSoft en C:\SfSupply\Potsoft\Fotos, para facilitar su ubicación
+                al momento de realizar el respaldo. También se recomienda comprimir dicha carpeta antes de pegarla en la ubicación destino, ya que generalmente
+                las fotos ocupan un espacio considerable de memoria y después del proceso de compresión dicho espacio o tamaño de memoria se reduce considerablemente.
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Salir";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    @*<div class="col-md-12">
+            <p class="lead">
+                Esta ventana le muestra todos los productos registrados en el sistema con su código y unidad de medida e indicando si acepta o no medidas referenciales.
+            </p>
+        </div>*@
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Del menú <b>Archivos</b> seleccione <b>Salir</b>; aparecerá un mensaje en el que se le pedirá que confirme su deseo de salir de PotSoft. <br><br>
+                    Elija el botón <b>Si</b>, si desea salir del sistema o la opción <b>No</b>, si desea seguir trabajando con el sistema.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/62.jpg" class="thumbnail" data-lightbox="Salir" data-title="Salir">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/62.jpg" alt="Salir" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

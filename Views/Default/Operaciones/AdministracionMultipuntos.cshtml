@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Administración de multipuntos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En esta ventana usted podrá registrar las hileras de los cultivos que usted tiene en la finca,
+            así como también el tipo de planta y en que zona de la finca se encuentra ubicada si es para el norte o este.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Igualmente puede agregar, modificar y eliminar una planta multipunto que haya registrado.<br><br>
+                    Podrá solicitar la ayuda del sistema presionando la tecla <b>F1</b> o con el mouse el botón correspondiente. Del mismo modo podrá salir de la ventana por medio de la tecla <b>Esc</b> o por el botón correspondiente.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                    <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                    </a>
+                </div>*@
+        </div>
+    </div>
+</article>

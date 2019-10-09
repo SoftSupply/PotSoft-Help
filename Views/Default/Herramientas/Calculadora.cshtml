@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Calculadora";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    @*<div class="col-md-12">
+        <p class="lead">
+            Esta ventana le permite cambiar su contraseña aunque no tenga permiso para administrar los usuarios. 
+        </p>
+    </div>*@
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Da acceso a la calculadora del sistema para realizar los cálculos aritméticos que se le puedan
+                    presentar durante el sistema.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/35.jpg" class="thumbnail" data-lightbox="Calculadora" data-title="Calculadora">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/35.jpg" alt="Calculadora" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

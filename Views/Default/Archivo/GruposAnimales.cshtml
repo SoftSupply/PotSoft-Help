@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Grupos de animales";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana le muestra los grupos de animales registrados en el módulo de producción seleccionado.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Desde esta ventana puede <b>Agregar</b>, <b>Modificar</b> o <b>Eliminar</b> grupos de animales 
+                    registrados en el sistema. Esta ventana muestra el código y el nombre de cada grupo de animales, 
+                    así como el código del lote en el que se encuentran esos animales actualmente y la cantidad de 
+                    animales en el grupo.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+            <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+            </a>
+        </div>*@
+            <div class="col-md-8">
+                <p>
+                    Los datos mostrados en esta ventana pueden ordenarse según sus necesidades simplemente con hacer 
+                    clic sobre el encabezado de la columna por la cual desea ordenarlos; al hacer clic la primera vez 
+                    sobre la columna, los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado de 
+                    columna una segunda vez, los datos se ordenarán descendentemente.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Podrá solicitar la ayuda del sistema presionando la tecla <b>F1</b> o con el mouse el botón 
+                    correspondiente. Igualmente podrá salir de la ventana por medio de la tecla o por el botón 
+                    correspondiente.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

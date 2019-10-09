@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Especies de animales";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana le muestra las especies de animales registradas en el sistema.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Desde esta ventana puede <b>Agregar</b>, <b>Modificar</b> o <b>Eliminar</b> especies de animales registradas
+                    en el sistema. Los datos mostrados en esta ventana pueden ordenarse según sus necesidades simplemente con hacer
+                    clic sobre el encabezado de la columna por la cual desea ordenarlos; al hacer clic la primera vez sobre la columna,
+                    los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado de columna una segunda vez,
+                    los datos se ordenarán descendentemente.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/7.jpg" class="thumbnail" data-lightbox="Especies de animales" data-title="Especies de animales">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/7.jpg" alt="Especies de animales" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Podrá solicitar la ayuda del sistema presionando la tecla <b>F1</b> o con el mouse el botón 
+                    correspondiente. Igualmente podrá salir de la ventana por medio de la tecla <b>Esc</b> o por 
+                    el botón correspondiente.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Requerimientos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Antes de comenzar a utilizar PotSoft, verifique si el equipo donde realizará la instalación cumple con 
+            los siguientes requerimientos.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li><a href="#RequerimientosMinimos">Requerimientos mínimos</a></li>
+            <li><a href="#RequerimientosRecomendados">Requerimientos recomendados</a></li>
+            <li><a href="#SistemasCompatibles">Sistemas operativos compatibles</a></li>
+            <li><a href="#SistemasServidoresCompatibles">Sistemas operativos (Servidores) compatibles</a></li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="RequerimientosMinimos">Requerimientos mínimos</h3>
+        <ul>
+            <li>Procesador igual o superior a 2.0 Ghz.</li>
+            <li>2 Gb. de memoria RAM.</li>
+            <li>10 Gb. de espacio libre en disco.</li>
+        </ul>
+        <h3 id="RequerimientosRecomendados">Requerimientos recomendados</h3>
+        <ul>
+            <li>Procesador doble núcleo superior a 2.0 Ghz.</li>
+            <li>4 Gb. de memoria RAM.</li>
+            <li>20 Gb. de espacio libre en disco.</li>
+            <li>Conexión a Internet.</li>
+        </ul>
+        <hr />
+        <h3 id="SistemasCompatibles">Sistemas operativos compatibles</h3>
+        <ul>
+            <li>Microsoft Windows 7 con SP1</li>
+            <li>Microsoft Windows 8, 8.1</li>
+            <li>Microsoft Windows 10</li>
+        </ul>
+        <h3 id="SistemasServidoresCompatibles">Sistemas operativos (Servidores) compatibles</h3>
+        <ul>
+            <li>Microsoft Windows Server 2008 R2 SP1</li>
+            <li>Microsoft Windows Server 2012, 2012 R2</li>
+        </ul>
+        <hr />
+        <div class="alert alert-warning row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Para instalaciones en otros sistemas operativos se recomienda virtualizar algunos de los
+                sistemas anteriores utilizando Virtual Box para equipos Mac y distribuciones de Linux.
+            </div>
+            </div>
+    </div>
+</article>

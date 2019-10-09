@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Notificar diagnóstico en plantas";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta ventana podrá reportar los diagnósticos en plantas que se estén llevando en la finca.
+        </p>
+        <p>
+            Dependiendo de la configuración del módulo de producción podrá notificar los diagnósticos a nivel de lote
+            para obtener mayor información al respecto, consulte la ayuda de históricos de diagnósticos.
+        </p>
+    </div>
+    @*<div class="col-md-4">
+        <a href="~/Areas/Potsoft/Content/img/capturas/60.jpg" class="thumbnail" data-lightbox="Variables de unidades de producción" data-title="Variables de unidades de producción">
+            <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/60.jpg" alt="Variables de unidades de producción" />
+        </a>
+    </div>*@
+</article>

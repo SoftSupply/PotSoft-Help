@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Bienvenido";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Guía que describe detalladamente todas las funciones del sistema PotSoft para una mejor experiencia del usuario.
+        </p>
+    </div>
+    <div class="col-md-2 text-center">
+        <img class="img-responsive" src="~/Areas/PotSoft/Content/img/logo.png" alt="Logo PotSoft" />
+    </div>
+    <div class="col-md-10">
+        <p>
+            Es una herramienta computarizada que permite administrar y controlar cualquier sistema productivo (agrícola, ganadero, acuícola u otros). 
+            Si el sistema de producción involucra animales, controlará el inventario, movimientos, rotaciones, calculando periodos de ocupación, descanso, 
+            carga instantánea, producción por unidad de superficie, etc. Si el sistema de producción es agrícola podrá manejar cultivos con un sistema de multipunto. Controla cultivos permanentes (frutales, palma aceitera, entre otros) o de ciclo corto (hortalizas, maíz, entre otros), así como también el manejo agronómico de los potreros.
+        </p>
+    </div>
+</div>

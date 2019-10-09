@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Pluviómetros";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana muestra los pluviómetros que se encuentran registrados en el sistema con su respectivo código, capacidad máxima y escala (milímetros o pulgadas)
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Esta ventana le permitirá agregar un nuevo pluviómetro al sistema, y modificar o eliminar los ya
+                    registrados. Los datos mostrados en esta ventana pueden ordenarse según sus necesidades simplemente
+                    con hacer clic sobre el encabezado de la columna por la cual desea ordenarlos; al hacer clic la
+                    primera vez sobre la columna, los datos se ordenarán ascendentemente, y al hacer clic sobre el
+                    encabezado de columna una segunda vez, los datos se ordenarán descendentemente.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/49.jpg" class="thumbnail" data-lightbox="Pluviómetros" data-title="Pluviómetros">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/49.jpg" alt="Pluviómetros" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Para salir de la ventana presione la tecla <b>Esc</b> o presione el botón situado en el lado derecho
+                    de la ventana.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/50.jpg" class="thumbnail" data-lightbox="Agregar pluviómetro" data-title="Agregar pluviómetro">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/50.jpg" alt="Agregar pluviómetro" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

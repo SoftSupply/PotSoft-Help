@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Listado de diagnóstico, tratamientos y pruebas en plantas";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En esta ventana se puede apreciar todos los diagnósticos, tratamientos y pruebas en plantas que se han registrado en el sistema. 
+        </p>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Para imprimir el reporte el usuario deberá seleccionar, en primera instancia, un diagnóstico,
+                    tratamiento o prueba haciendo clic con el mouse sobre la casilla de selección ubicada a la
+                    izquierda del nombre.
+                </p>
+                <p>
+                    Por último hace clic en el botón imprimir e inmediatamente le imprimirá el reporte solicitado.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/42.jpg" class="thumbnail" data-lightbox="Listado de diagnósticos, tratamientos y pruebas en plantas" data-title="Listado de diagnósticos, tratamientos y pruebas en plantas">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/42.jpg" alt="Listado de diagnósticos, tratamientos y pruebas en plantas" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Podrá solicitar la ayuda del sistema presionando la tecla <b>F1</b> o con el mouse el botón
+                    correspondiente. Igualmente podrá salir de la ventana por medio de la tecla <b>Esc</b> o por el
+                    botón correspondiente.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

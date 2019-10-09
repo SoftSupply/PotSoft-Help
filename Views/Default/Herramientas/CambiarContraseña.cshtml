@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Cambiar contraseña";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana le permite cambiar su contraseña aunque no tenga permiso para administrar los usuarios. 
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Para cambiar su contraseña debe seguir los siguientes pasos:
+                    <ul>
+                        <li>Iniciar una sesión de usuario con su nombre de usuario y contraseña.</li>
+                        <li>Seleccionar del menú <b>Herramientas</b> el comando <b>Cambiar contraseña</b>.</li>
+                        <li>Escriba su contraseña actual.</li>
+                        <li>Escriba su nueva contraseña.</li>
+                        <li>Vuelva a escribir su nueva contraseña para efectos de confirmación.</li>
+                        <li>Pulse el botón <b>Ok</b> para guardar los cambios.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/29.jpg" class="thumbnail" data-lightbox="Cambiar contraseña" data-title="Cambiar contraseña">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/29.jpg" alt="Cambiar contraseña" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,290 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Unidades de producción";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Este menú está compuesto por diferentes opciones como son:
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li><a href="#Agregar">Agregar</a></li>
+            <li><a href="#Agregar">Modificar</a></li>
+            <li><a href="#Agregar">Eliminar</a></li>
+            <li><a href="#Fotos">Fotos</a></li>
+            <li><a href="#Variables">Variables</a></li>
+            <li><a href="#HistoricoActividades">Histórico de actividades/labores</a></li>
+            <li><a href="#HistoricoProduccion">Histórico de producción</a></li>
+            <li><a href="#HistoricoMovimientos">Histórico de movimientos</a></li>
+            <li><a href="#HistoricoDiagnostico">Histórico de diagnóstico en plantas</a></li>
+            <li><a href="#HistoricoTratamientos">Histórico de tratamientos en plantas</a></li>
+            <li><a href="#HistoricoPruebas">Histórico de pruebas en plantas</a></li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Agregar">Agregar y modificar unidades de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Las unidades de producción son el segundo nivel organizacional que se define en el modelo de sistemas de producción empleado en PotSoft.
+                    Cada unidad de producción se divide en lotes de producción, los cuales pueden estar destinados a cultivo o pastoreo.
+                </p>
+            </div>
+            <div class="col-md-4">
+                    <a href="~/Areas/Potsoft/Content/img/capturas/58.jpg" class="thumbnail" data-lightbox="Agregar unidad de producción" data-title="Agregar unidad de producción">
+                        <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/58.jpg" alt="Agregar unidad de producción" />
+                    </a>
+                </div>
+            <div class="col-md-8">
+                <p>
+                    Los datos básicos necesarios para definir una unidad de producción en PotSoft son los siguientes:
+                    <ul>
+                        <li>
+                            <b>Código: </b> Debe especificarse un código único para cada unidad de producción, de 1 carácter de longitud como mínimo y de 6 caracteres de longitud como máximo.
+                            Los caracteres pueden ser alfanuméricos y siempre se tomarán en mayúsculas.
+                        </li>
+                        <li>
+                            <b>Nombre de la unidad: </b> Debe especificarse un nombre único para cada unidad de producción, de 1 carácter de longitud como mínimo y de 40 caracteres de longitud como máximo.
+                            Los caracteres pueden ser alfanuméricos.
+                        </li>
+                        <li>
+                            <b>Color de cada lote de producción: </b> Permite especificar el color con el que se dibujará el mapa de cada lote de producción que pertenezca a la unidad de producción,
+                            puede seleccionarlo haciendo clic con el mouse o desplazándose con las flechas de dirección.
+                        </li>
+                        <li><b>Tamaño de Letra: </b> Establece el tamaño de letra que será utilizado para identificar cada lote de producción en el mapa.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Para agregar, modificar o eliminar planos a la unidad de producción, presione el botón <b>Plano</b>
+                    que se muestra en la ventana. <br><br>
+                    Igualmente para agregar, modificar o eliminar fotos a la unidad de producción, presione el botón <b>Foto</b>. <br><br>
+                    En la pestaña <b>Inventario </b>se muestra el listado de los animales que se encuentran en todos los lotes contenidos en esta unidad.
+                </p>
+                <p>
+                    Si no se ha guardado la unidad de producción para el momento en que se vaya a operar con mapas o fotos, el sistema le preguntará si desea salvar la unidad,
+                    si responde Si entonces se salvará la unidad y podrá llevar a cabo la operación;
+                    por el contrario si su respuesta es No, entonces no se guardará la unidad ni se llevará a cabo la operación, pero la ventana se mantendrá abierta.
+                </p>
+                <p>
+                    Una vez que se han establecido las propiedades básicas del módulo de producción, puede proceder a guardarlo o bien puede configurar variables personalizadas de unidades de producción,
+                    así como también asignar valores a variables de unidad.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Fotos">Fotografías de unidades de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana podrá agregar y modificar las fotografías de la unidad de producción, así como también borrarlas.<br>
+                    Para asociar una fotografía a una unidad de producción, debe indicar:
+                    <ul>
+                        <li> <b>Código: </b> Debe especificarse un código único para cada fotografía, de 1 carácter de longitud como mínimo y de 4 caracteres de longitud como máximo.</li>
+                        <li> <b>Fecha.</b></li>
+                        <li> <b>Ruta del archivo de imagen.</b></li>
+                        <li><b>Comentario: </b> Esto es opcional.</li>
+                    </ul>
+                    Puede asociar a la unidad tantas fotos como quiera.
+                </p>
+            </div>
+            <div class="col-md-4">
+                    <a href="~/Areas/Potsoft/Content/img/capturas/59.jpg" class="thumbnail" data-lightbox="Fotografías de unidad de producción" data-title="Fotografías de unidad de producción">
+                        <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/59.jpg" alt="Fotografías de unidad de producción" />
+                    </a>
+                </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Variables"> Variables de unidades de producción </h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Esta ventana le muestra las variables personalizadas de unidades de producción que se encuentran registradas en el sistema así como el tipo de las mismas.
+                    Los datos mostrados en esta ventana pueden ordenarse según sus necesidades simplemente con hacer clic sobre el encabezado de la columna por la cual desea ordenarlos;
+                    al hacer clic la primera vez sobre la columna, los datos se ordenarán ascendentemente, y al hacer clic sobre el encabezado de columna una segunda vez, los datos se ordenarán descendentemente.
+                    <br><br>
+                    Desde esta ventana puede <b>Agregar</b>, <b>Modificar</b> y al mismo tiempo eliminar las variables de ámbito general mediante los botones de la ventana.
+                </p>
+            </div>
+            <div class="col-md-4">
+                    <a href="~/Areas/Potsoft/Content/img/capturas/60.jpg" class="thumbnail" data-lightbox="Variables de unidades de producción" data-title="Variables de unidades de producción">
+                        <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/60.jpg" alt="Variables de unidades de producción" />
+                    </a>
+                </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoActividades">Histórico de actividades/labores</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todas las actividades realizadas en un módulo, unidad o lote de producción, ordenadas por fecha de manera descendente, es decir, mostrando primero las actividades realizadas más recientemente.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+            <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+            </a>
+        </div>*@
+            <div class="col-md-8">
+                <p>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de actividades por actividad y rangos de fechas.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    En la parte inferior de la ventana hay 3 botones que le permiten:
+                    <ul>
+                        <li> <b>Agregar: </b> podrá agregar actividades al histórico; esto tiene el mismo efecto de la notificación de actividades realizadas.</li>
+                        <li> <b>Modificar: </b> permite modificar los datos de un registro histórico de actividad siempre y cuando la realización de dicha actividad no haya acarreado la modificación del inventario de animales.</li>
+                        <li> <b>Eliminar: </b> permite eliminar un registro histórico de actividad siempre y cuando la realización de dicha actividad no haya acarreado la modificación del inventario de animales.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoProduccion">Histórico de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todos los productos obtenidos en una unidad o un lote, ordenados por fecha de manera descendente, es decir, mostrando primero los productos obtenidos más recientemente.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+            <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+            </a>
+        </div>*@
+            <div class="col-md-8">
+                <p>
+                    Por defecto, sólo se muestran las producciones realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de producción por producto y rangos de fechas.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    En la parte inferior de la ventana hay 3 botones que le permiten:
+                    <ul>
+                        <li>
+                            <b>Agregar: </b> podrá agregar producciones al histórico; esto tiene el mismo efecto de la notificación de producción.
+                        </li>
+                        <li>
+                            <b>Modificar: </b> permite modificar los datos de un registro histórico de producción.
+                        </li>
+                        <li>
+                            <b>Eliminar: </b> permite eliminar un registro histórico de producción.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoMovimientos">Histórico de movimientos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestra un sumario de todos los movimientos de animales realizados en un módulo, unidad o lote de producción, ordenados por fecha de manera descendente, es decir, mostrando primero los movimientos realizados más recientemente.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+            <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+            </a>
+        </div>*@
+            <div class="col-md-8">
+                <p>
+                    Por defecto, sólo se muestran los movimientos realizados en el mes en curso. Adicionalmente, puede filtrar el listado histórico de movimientos por tipo de movimiento y rangos de fechas. Al seleccionar un registro histórico de movimiento de la lista,
+                    se muestran los detalles del mismo en la lista inferior.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    En la parte inferior de la ventana hay 3 botones que le permiten:
+                    <ul>
+                        <li><b>Agregar: </b> podrá agregar movimientos al histórico; esto tiene el mismo efecto de la notificación de movimientos.</li>
+                        <li><b>Modificar: </b> permite modificar los datos de un registro histórico de movimiento siempre y cuando la realización de dicho movimiento no haya acarreado la modificación del inventario de animales de otro lote.</li>
+                        <li><b>Eliminar: </b> permite eliminar un registro histórico de movimiento.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoDiagnostico">Histórico de diagnóstico en plantas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todos los diagnósticos realizados a las plantas que están registradas en el módulo, unidad o lote de producción ordenadas según el tipo de lote, cultivo,
+                    hilera, posición y diagnóstico, incluye también un comentario donde indique el tipo de afección que presenta la planta.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                </a>
+        </div>*@
+            <div class="col-md-8">
+                <p>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de diagnósticos por diagnósticos y rangos de fechas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoTratamientos">Histórico de tratamientos en plantas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todos los tratamientos que le serán realizados a las plantas que están registradas en el módulo,
+                    unidad o lote de producción ordenadas según el tipo de lote, cultivo, hilera, posición y tratamientos, incluye también un
+                    comentario donde indique alguna anomalía que presenta la planta.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                </a>
+        </div>*@
+            <div class="col-md-8">
+                <p>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado histórico de tratamientos por tratamientos y rangos de fechas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="HistoricoPruebas">Histórico de pruebas en plantas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta ventana se muestran todas las pruebas que le serán aplicadas a las plantas que están registradas en el módulo,
+                    unidad o lote de producción , ordenadas según el tipo de lote, cultivo, hilera, posición y tratamientos, incluye también
+                    un comentario donde indique alguna anomalía que presenta la planta.
+                </p>
+            </div>
+            @*<div class="col-md-4">
+                <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                    <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                </a>
+        </div>*@
+            <div class="col-md-8">
+                <p>
+                    Por defecto, sólo se muestran los actividades realizadas en el mes en curso. Adicionalmente, puede filtrar el listado
+                    histórico de pruebas por pruebas y rangos de fechas.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

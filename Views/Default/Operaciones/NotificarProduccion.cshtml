@@ -1,0 +1,198 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Notificar producción";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta ventana podrá reportar la producción. Dependiendo de la configuración del módulo de
+            producción podrá notificar la producción a nivel de módulo unidad, lote o grupos de animales, y en algunos
+            casos podrá notificarla indistintamente a nivel de módulo/unidad/lote; para obtener mayor información al
+            respecto, consulte la ayuda de módulo de producción.
+        </p>
+        <p>
+            Si el producto a reportar es leche o bien modifica el inventario de alguna categoría de animal, entonces la producción sólo podrá
+            reportarse a nivel de grupos de animales. En caso contrario, es decir, que el producto no sea leche ni modifique el inventario de alguna
+            categoría de animal, entonces la producción podrá reportarse a cualquier nivel dependiendo de la configuración del módulo.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li> <a href="#SeleccionarModulo">Seleccionar módulo de producción</a></li>
+            <li> <a href="#SeleccionarUnidad">Seleccionar unidad de producción</a></li>
+            <li> <a href="#SeleccionarLote">Seleccionar Lote de producción/Grupo de animales</a></li>
+            <li> <a href="#SeleccionarProducto">Seleccionar el producto a notificar</a></li>
+            <li> <a href="#EstablecerCantidad">Establecer cantidad</a></li>
+            <li> <a href="#EstablecerMonto">Establezcer el monto total producido en dinero</a></li>
+            <li><a href="#AgregarComentario">Agregar comentario</a></li>
+            <li><a href="#InformacionCostos">Establecer la información de costos de producción/cosecha</a></li>
+            <li> <a href="#BotonAgregar">Pulsar botón Agregar</a></li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="SeleccionarModulo">Seleccionar módulo de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Una vez seleccionado un módulo, sólo podrá seleccionar aquellas unidades de producción definidas en el mismo; análogamente, al seleccionar una unidad
+                    de producción sólo podrá seleccionar los lotes de producción de la misma. <br><br>
+                    Siempre debe seleccionarse un módulo y sólo podrá notificar aquellas acciones
+                    que estén asociadas a ese módulo de producción. Puede seleccionar un módulo de producción de cualquiera de las siguientes formas:
+                    <ul>
+                        <li> Escriba el código del módulo en cuestión y pulse <b>Enter</b>.</li>
+                        <li>
+                            Invoque la ventana de consulta de módulos pulsando el botón ubicado a la derecha del campo reservado para el código o bien pulsando la tecla <b>F2</b>. <br>
+                            Una vez abierta la ventana de consulta de módulos, el usuario podrá selecciona un módulo de cualquiera de las siguientes maneras:
+                            <ul>
+                                <li>Haciendo doble-clic sobre el módulo que desee seleccionar.</li>
+                                <li> Seleccionando el módulo que desee y luego pulsando el botón <b>Ok</b>.</li>
+                                <li> Seleccionando el módulo que desee y luego pulsando la tecla <b>Enter</b>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/70.jpg" class="thumbnail" data-lightbox="Notificar producción/cosecha" data-title="Notificar producción/cosecha">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/70.jpg" alt="Notificar producción/cosecha" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="SeleccionarUnidad">Seleccionar unidad de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p> Se hace de manera análoga a la selección de módulos de producción. </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="SeleccionarLote"> Seleccionar lote de producción / grupo de animales </h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Si el módulo no maneja animales, entonces podrá seleccionar el lote de producción de manera análoga a la
+                    selección de módulos y unidades siempre y cuando esté permitido según la configuración del módulo.<br><br>
+                    En caso de que el módulo maneje animales, deberá seleccionar el Grupo de animales de manera análoga a la selección
+                    de módulos y unidades.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="SeleccionarProducto">Seleccionar el producto a notificar</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El producto a notificar puede especificarse de tres maneras:
+                    <ul>
+                        <li>Escribiendo el código del producto y pulsando <b>Enter</b>.</li>
+                        <li>
+                            Invoque la ventana de consulta de productos asociados al módulo pulsando el botón ubicado a la derecha del campo reservado para el código o bien pulsando la tecla <b>F2</b>.<br>
+                            Una vez abierta la ventana de consulta de productos asociados al módulo, el usuario podrá seleccionar un producto de cualquiera de las siguientes maneras:
+                            <ul>
+                                <li> Haciendo doble-clic sobre el producto que desee seleccionar.</li>
+                                <li> Seleccionando el producto que desee y luego pulsando el botón <b>Ok</b>.</li>
+                                <li>Seleccionando el producto que desee y luego pulsando la tecla <b>Enter</b>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="EstablecerCantidad">Establecer cantidad</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>Debe indicar la cantidad de unidades en que se mide el producto que se produjeron/cosecharon. Si el producto está configurado para ser medido por monto global, este campo queda inhabilitado.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="EstablecerMonto">Establezcer el monto total producido en dinero</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    El sistema le sugiere el valor de este campo según la cantidad producida y el precio del producto establecido
+                    en la configuración de productos asociados al módulo. El usuario puede variar este costo al notificar la producción
+                    según su criterio; de ser así, el sistema realizará automáticamente los ajustes necesarios en la configuración de precio
+                    del producto asociado al módulo de producción.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="EstablecerFecha">Establecer la fecha y hora de producción</h3>
+        @*<div class="row">
+                <div class="col-md-8">
+                    <p>
+                        En esta ventana se muestra un sumario de todos los movimientos de animales realizados en un módulo, unidad o lote de producción, ordenados por fecha de manera descendente, es decir, mostrando primero los movimientos realizados más recientemente.
+                        <br><br>
+                        Por defecto, sólo se muestran los movimientos realizados en el mes en curso. Adicionalmente, puede filtrar el listado histórico de movimientos por tipo de movimiento y rangos de fechas. Al seleccionar un registro histórico de movimiento de la lista, se muestran los detalles del mismo en la lista inferior.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                        <a href="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" class="thumbnail" data-lightbox="Menú archivo" data-title="Menu archivo">
+                            <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/captures/Archivo.jpg" alt="Menú archivo" />
+                        </a>
+                    </div>
+            </div>*@
+    </div>
+    <div class="col-md-12">
+        <h3 id="AgregarComentario">Agregar comentario</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Este paso es opcional. Si quiere que varios productos se registren con el mismo comentario, marque
+                    la casilla de verificación mantener comentario, de lo contrario el campo para el comentario se limpiará
+                    cada vez que agregue un producto.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="InformacionCostos">Establecer la información de costos de producción/cosecha</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    <ul>
+                        <li> Indique la cantidad de unidades en que se mide el costo de producción de este producto empleadas en la producción. Si es por monto global, este campo aparecerá inhabilitado.</li>
+                        <li>
+                            <b>Indique el costo de producción/cosecha: </b>el sistema le sugiere el valor de este campo según la cantidad producida y el costo de producción del producto establecido en la configuración de
+                            productos asociados al módulo. El usuario puede variar este costo al notificar la producción según su criterio; de ser así, el sistema realizará automáticamente los ajustes necesarios en
+                            la configuración de costos de producción del producto asociado al módulo de producción. Esta información es opcional.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="BotonAgregar">Pulsar botón agregar</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Si todos los datos necesarios han sido introducidos, entonces puede agregar el producto a la lista
+                    de actividades notificadas que aparece en la parte inferior de la ventana, la cual muestra un
+                    sumario de cada producto notificado. Si lo desea, puede eliminar cualquiera de los productos
+                    notificados seleccionándola y pulsando el botón <b>Eliminar</b>.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Si la elaboración de este producto altera de alguna manera el inventario de animales, entonces emergerá la
+                    ventana de datos adicionales de producción. Siga las instrucciones allí indicadas y continúe el proceso de
+                    notificación de producción.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

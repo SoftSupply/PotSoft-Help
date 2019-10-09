@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Restaurar datos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Este procedimiento permite recuperar la base de datos del sistema PotSoft desde cualquier unidad en la que 
+            previamente haya sido realizado un respaldo.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Al seleccionar esta opción se despliega un cuadro de diálogo desde que consta de tres secciones
+                    fundamentales:
+                    <ul>
+                        <li>
+                            <b>Buscar en: </b>Debe indicar la ubicación origen en la que se encuentra el respaldo,
+                            puede especificar una unidad Zip, pen drive o sencillamente la memoria del computador (disco C, Mis documentos, entre otros),
+                            es decir, la dirección en la que fue almacenado el respaldo.
+                        </li>
+                        <li>
+                            <b>Cuadro de contenido: </b>Muestra todos los archivos y carpetas que se encuentran en la dirección destino.
+                            Desde ésta sección es posible acceder a las diferentes carpetas haciendo doble clic en aquella que se desee
+                            abrir o seleccionando la carpeta y pulsar la tecla <b>Enter</b> (o clic en el botón <b>Abrir</b>).
+                        </li>
+                        <li>
+                            <b>Nombre de archivo: </b>Por defecto el sistema coloca PotSoft como nombre del archivo respaldo, pero puede
+                            ser cambiado en caso de ser necesario. El nombre debe ser exactamente igual al archivo respaldo.
+                            Al seleccionar la unidad en la que se encuentran respaldados los datos a recuperar, y el archivo respaldo, sólo
+                            debe presionar el botón <b>Abrir</b>.<br />
+                            Se recomienda hacer doble clic en el archivo respaldo dentro del cuadro de contenido (o seleccionarlo y pulsar
+                            la tecla <b>Enter</b>).
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/33.jpg" class="thumbnail" data-lightbox="Recuperar datos" data-title="Recuperar datos">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/33.jpg" alt="Recuperar datos" />
+                </a>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Nota</strong><br />
+                Las fotos de los animales (en caso de que se tengan) NO están incluidas en el respaldo, ya que éstas NO forman 
+                parte de la base de datos.
+                Este hecho implica que al momento de realizar la recuperación, las fotos NO serán cargadas.
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p>
+                La recuperación del respaldo de las fotos (en caso de que se tenga) debe realizarse independiente de la 
+                recuperación de la base de datos que se hace a través de PotSoft. Las fotos se deben colocar en la ubicación 
+                exacta en que se encontraban al momento de realizar el respaldo para que PotSoft las reconozca cuando se este 
+                ejecutando. Se recomienda que las fotos sean almacenadas en la carpeta
+                C:\SfSupply\PotSoft\Fotos (carpeta que se crea al momento de instalar PotSoft). <br /><br />
+                De esta forma, se debe copiar el contenido del respaldo, es decir las fotos a la carpeta de ubicación original 
+                (ubicación recomendada: C:\SfSupply\PotSoft\Fotos) mediante el Explorador de Windows (o a través de Mi PC). <br />
+                Si el respaldo de las fotos se encuentra comprimido debe descomprimirlo primero para luego extraer las fotos y pegarlas
+                en la carpeta antes mencionada.
+            </p>
+        </div>
+    </div>
+</article>

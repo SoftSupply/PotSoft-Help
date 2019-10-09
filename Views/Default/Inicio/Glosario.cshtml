@@ -1,0 +1,205 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Glosario de términos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En ésta sección se explican detalladamente los conceptos y significados de cada uno de los términos resaltantes en el manejo del sistema PotSoft.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Actividades">Actividades/Labores</a>
+            </li>
+            <li>
+                <a href="#Categoria">Categorías de animales</a>
+            </li>
+            <li>
+                <a href="#Coordenadas">Coordenadas</a>
+            </li>
+            <li>
+                <a href="#Cultivos">Cultivos</a>
+            </li>
+            <li>
+                <a href="#Egresos">Egresos</a>
+            </li>
+            <li>
+                <a href="#Estadisticas">Estadísticas</a>
+            </li>
+            <li>
+                <a href="#GrupoAnimales">Grupo de animales</a>
+            </li>
+            <li>
+                <a href="#Historicos">Históricos</a>
+            </li>
+            <li>
+                <a href="#LoteProduccion">Lote de producción</a>
+            </li>
+            <li>
+                <a href="#ModuloProduccion">Módulo de producción</a>
+            </li>
+            <li>
+                <a href="#Producto">Producto</a>
+            </li>
+            <li>
+                <a href="#Pluviometro">Pluviómetro</a>
+            </li>
+            <li>
+                <a href="#Pluviosidad">Pluviosidad</a>
+            </li>
+            <li>
+                <a href="#TiempoDigestibilidad">Tiempo de digestibilidad</a>
+            </li>
+            <li>
+                <a href="#UnidadesMedicion">Unidades de medición</a>
+            </li>
+            <li>
+                <a href="#Usuario">Usuario</a>
+            </li>
+            <li>
+                <a href="#Variable">Variable</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Actividades">Actividades/Labores</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son las tareas que suelen realizarse en la finca o simplemente las que están pautadas generalmente, por ejemplo 
+                    controlar y supervisar la producción ganadera, mantenimiento de las maquinarias entre otros.
+                </p>
+            </div>
+        </div>
+        <h3 id="Categoria">Categorías de animales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son aquellos animales que se encuentran en la finca y estan distribuidos o separados por grupos,vaqueras o lotes.
+                </p>
+            </div>
+        </div>
+        <h3 id="Coordenadas">Coordenadas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son los valores que permiten definir inequívocamente la posición de cualquier punto de un espacio o más generalmente variedad diferenciable.
+                </p>
+            </div>
+        </div>
+        <h3 id="Cultivos">Cultivos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son las materias, abundantes y baratas, en productos elaborados en las fincas.
+                </p>
+            </div>
+        </div>
+        <h3 id="Egresos">Egresos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es la salida o desembolso de dinero, motivada por el compromiso de liquidación de algún bien o servicio recibido o por algún otro concepto.Estado del animal que corresponde a un macho que no ha sido destetado.
+                </p>
+            </div>
+        </div>
+        <h3 id="Estadisticas">Estadísticas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es comúnmente considerada como una colección de hechos numéricos expresados en términos de una relación sumisa, y que han sido recopilado a partir de otros datos numéricos.
+                </p>
+            </div>
+        </div>
+        <h3 id="GrupoAnimales">Grupo de animales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son las especies que se encuentran ubicadas en la finca las cuales estan distribuidas por especies o grupos de animales.
+                </p>
+            </div>
+        </div>
+        <h3 id="LoteProduccion">Lote de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son cada una de las parcelas donde estan distribuidos cada cultivo de plantas bien sea multipunto o no grupos de animales según el tipo de producción.
+                </p>
+            </div>
+        </div>
+        <h3 id="ModuloProduccion">Módulo de producción</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Consiste en definir las principales características productivas de la finca en lo que se refiere a ganado y cultivos.
+                </p>
+            </div>
+        </div>
+        <h3 id="Producto">Producto</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En términos generales el producto es el punto central que realiza toda empresa, organización o finca sea lucrativo o no para satisfacer una necesidad.
+                </p>
+            </div>
+        </div>
+        <h3 id="Pluviometro">Pluviómetro</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un instrumento que mide la cantidad de agua precipitada en un determinado lugar. La unidad de medida es en milímetros (mm). 
+                    Una precipitación de 5 mm indica que si toda el agua de la lluvia se acumulara en un terreno plano sin escurrir ni evaporarse, 
+                    la altura de la capa de agua sería de 5 mm. Los milímetros (mm) son equivalentes a los litros por metro cuadrado.
+                </p>
+            </div>
+        </div>
+        <h3 id="Pluviosidad">Pluviosidad</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Cantidad de agua que cae sobre una determinada extensión de terreno hasta el espesor de 1 mm.
+                </p>
+            </div>
+        </div>
+        <h3 id="TiempoDigestibilidad">Tiempo de digestibilidad</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es el período de tiempo para medir el aprovechamiento de un alimento en el animal.
+                </p>
+            </div>
+        </div>
+        <h3 id="UnidadesMedicion">Unidades de medición</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Son aquellas que nos permiten clasificar diversas cosas, dependiendo de qué es aquello que queramos determinar. Algunos estudiosos indican que están relacionadas con las Matemáticas, de hecho en algunas de sus disciplinas oscuras tienen algo llamado teoría de medida.
+                </p>
+            </div>
+        </div>
+        <h3 id="Usuario">Usuario</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es la persona que utiliza o trabaja con algún objeto o que es destinaría de algún servicio público o privado, empresarial o profesional.
+                </p>
+            </div>
+        </div>
+        <h3 id="Variable">Variable</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Es un símbolo que representa un elemento no especificado que puede medirse u observarse que a la vez es susceptible de asumir varios valores.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

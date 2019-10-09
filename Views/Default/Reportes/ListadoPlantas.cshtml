@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Listado de plantas";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            En esta ventana se puede apreciar todos los diagnósticos, tratamientos y pruebas en plantas que se han 
+            registrado en el sistema.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Para imprimir el reporte el usuario deberá seleccionar, en primera instancia, un diagnóstico,
+                    tratamiento o prueba haciendo clic con el mouse sobre la casilla de selección ubicada a la izquierda
+                    del nombre.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/43.jpg" class="thumbnail" data-lightbox="Listado de plantas" data-title="Listado de plantas">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/43.jpg" alt="Listado de plantas" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Una vez hecho esto aparecerán, deberá entonces marcar aquellos que desea imprimir, para ello el
+                    usuario puede hacer clic con el mouse sobre la casilla de selección ubicada a la izquierda del nombre,
+                    o usar los botones ubicados a la derecha del cuadro:
+                    <ul>
+                        <li><b>Marcar todos: </b>Marca para imprimir todas las unidades y lotes del módulo..</li>
+                        <li><b>Desmarcar todos: </b>Quita la marca de todas las unidades y lotes del módulo, es importante destacar que si no hay ninguna unidad o lote marcada el reporte no se imprimirá.</li>
+                        <li><b>Marcar hijos: </b>Marca todas los hijos del nodo seleccionado.</li>
+                        <li><b>Desmarcar hijos: </b>Quita la marca de todos los hijos del nodo guardado.</li>
+                    </ul>
+                    Por último hace clic en el botón imprimir e inmediatamente le imprimirá el reporte solicitado.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

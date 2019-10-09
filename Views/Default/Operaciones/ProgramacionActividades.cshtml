@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Programación de actividades";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Esta ventana muestra la planificación de actividades del módulo, unidad o lote seleccionado, mostrando las 
+            actividades ordenadas por fecha ascendentemente. Desde aquí usted puede realizar la planificación de 
+            actividades/labores para el elemento seleccionado.
+        </p>
+    </div>
+    <div class="col-md-12">
+        @*<h3>Especies de animales</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Por defecto, al abrir la ventana sólo se muestran las actividades cuya realización esté programada dentro del período comprendido del primer día del mes en curso y la fecha actual.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/54.jpg" class="thumbnail" data-lightbox="Programación de actividades para módulo de producción" data-title="Programación de actividades para módulo de producción">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/54.jpg" alt="Programación de actividades para módulo de producción" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Adicionalmente, hay una casilla de verificación que le permite mostrar sólo las actividades cuya
+                    realización está pendiente o todas las actividades programadas sin importar si ya fueron realizadas
+                    y el usuario tiene la capacidad de filtrar el listado de actividades programadas por actividad y
+                    por rango de fechas.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    En la parte inferior de la ventana hay tres botones:
+                    <ul>
+                        <li> <b>Agregar: </b> agrega actividades a la planificación.</li>
+                        <li> <b>Modificar: </b> modifica los parámetros de planificación de actividades.</li>
+                        <li> <b>Eliminar: </b> elimina una actividad de la planificación.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

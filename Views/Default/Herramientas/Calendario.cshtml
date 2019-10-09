@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Calendario";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    @*<div class="col-md-12">
+        <p class="lead">
+            Esta ventana le permite cambiar su contraseña aunque no tenga permiso para administrar los usuarios. 
+        </p>
+    </div>*@
+    <div class="col-md-12">
+        @*<h3 id="Seleccionar">Seleccionar módulo de producción</h3>*@
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Da acceso al calendario del sistema, para llevar una cuenta sistematizada del tiempo para la
+                    organización de las actividades de la finca.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Potsoft/Content/img/capturas/36.jpg" class="thumbnail" data-lightbox="Calendario" data-title="Calendario">
+                    <img class="img-responsive" src="~/Areas/Potsoft/Content/img/capturas/36.jpg" alt="Calendario" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

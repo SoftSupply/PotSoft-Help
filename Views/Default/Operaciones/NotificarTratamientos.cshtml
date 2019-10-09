@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Notificar tratamientos en plantas";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Por medio de esta ventana podrá reportar los tratamientos en plantas que se les aplicará a los cultivos de la finca.
+            
+        </p>
+        <p>
+            Dependiendo de la configuración del módulo de producción podrá notificar los tratamientos a nivel de lote para obtener 
+            mayor información al respecto, consulte la ayuda de históricos de tratamientos.
+        </p>
+    </div>
+</article>
